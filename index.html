@@ -4,10 +4,46 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+    <script src="./js/parkfinder.js"></script>
+    <script>
+        function save() {
+            localStorage.setItem('library.visited', true)
+        }
+    </script>
     <title>Kentuckiana Parks</title>
 </head>
 <body>
     <h1>Welcome to Kentuckiana Parks and Recreation</h1>
     <p>We hope to be your first stop when it comes to Louisville area parks.</p>
+    <div id='app'>
+		<h1 text-align= 'center'>Kentuckiana Parks</h1>
+		<div class="park">
+			<table>
+			<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>Visited</td></thead>
+			<div>
+			<tr v-for="park in parks" :key='park.id' v-show='park.visited != true'>
+				<td>{{ park.parkName }}</td>
+				<td>{{ park.address }}</td>
+				<td>{{ park.zipCode }}</td>
+				<td><input type="checkbox" onclick='save()' v-model='park.visited'></input></td>
+          </tr>
+		  </table>
+		  </div>
+		  <p>Parks I have visited.</p>
+		  <div class="park">
+			<table>
+			<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>Visited</td></thead>
+			<div>
+			<tr v-for="park in parks" :key='park.id' v-show='park.visited === true'>
+				<td>{{ park.parkName }}</td>
+				<td>{{ park.address }}</td>
+				<td>{{ park.zipCode }}</td>
+				<td><input type="checkbox" v-model='park.visited'></input></td>
+          </tr>
+		  </table>
+		  </div>
+	</div>
+
 </body>
 </html>
