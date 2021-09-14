@@ -11,38 +11,38 @@ const app = new Vue ({
             {id: 6, parkName: "BINGHAM",	address: " 160 CORAL AVE",	zipCode: 40206, visited: false,},
             {id: 7, parkName: "BRADLEY",	address: "2516 BRADLEY AVE",	zipCode: 40217, visited: false,},
             {id: 8, parkName: "BUECHEL",	address: "247 ALPHA AVE",	zipCode: 40218, visited: false,},
-            {id: 9, parkName: "CAMP TAYLOR",	address: "4201 LEE AVE",	zipCode: 40213, visited: false,},/*
-            {id: 10,	CANE RUN	4816 CANE RUN RD	zipCode: 40216, visited: false,}
-            {id: 11	CAPERTON SWAMP	3916 RIVER RD	zipCode: 40207, visited: false,}
-            {id: 12	CENTRAL	1340 SOUTH FOURTH ST	zipCode: 40208, visited: false,}
-            {id: 13	CHICKASAW	1200 SOUTHWESTERN PKWY	zipCode: 40211, visited: false,}
-            {id: 14	CLIFF	4666 CLIFF AVE	zipCode: 40215, visited: false,}
-            {id: 15	CLIFTON	133 NORTH CHARLTON ST	zipCode: 40206, visited: false,}
-            {id: 16	CARRIE GAULBERT COX	3730 RIVER RD	zipCode: 40207, visited: false,}
-            {id: 17	DOUGLASS	2305 DOUGLASS BLVD	zipCode: 40205, visited: false,}
-            {id: 18	EASTOVER	118 SACRED HEART LN	zipCode: 40206, visited: false,}
-            {id: 19	FAIRDALE MINI	10714 WEST MANSLICK RD	40118
-            {id: 20	FLAGET FIELD	4425 GREENWOOD AVE	zipCode: 40211, visited: false,}
-            {id: 21	GERMAN-PARISTOWN	1134 EAST KENTUCKY ST	zipCode: 40204, visited: false,}
-            {id: 22	GNADINGER	103 ELLISON AVE	40204
-            {id: 23	WILLIAM HARRISON	3232 OLEANDA AVE	40215
-            {id: 24	HOPEWELL	509 NORTH BIRCHWOOD AVE	40206
-            {id: 25	NELSON HORNBECK	709 FAIRDALE RD	40118
-            {id: 26	HOUNZ LANE	2300 HOUNZ LN	40223
-                27	IRISH HILL	1131 LEXINGTON RD	40204
-            {id: 28	LOUIS B. ISRAEL	4708 SOUTH FIRST ST	40214
-            {id: 29	HAYS KENNEDY	7303 BEACHLAND BEACH RD	40059
-                30	KENNEDY COURT	225 KENNEDY AVE	40206
-                31	KLONDIKE	3809 KLONDIKE LN	40218
-                32	KULMER RESERVE	17200 KULMER BEACH RD	40177
-                33	LAKE DREAMLAND	4400 LAKE DREAMLAND RD	40216
-                34	SENECA GOLF COURSE	 2300 PEE WEE REESE RD	40205
-                35	CHARLES YOUNG	2721 LYTLE ST	40212
-                36	ROBERSON RUN	8205 JUDGE BLVD	40219
-                37	IROQUOIS GOLF COURSE	1501 RUNDILL RD	40214
-                38	NORFOLK ACRES	 4300 CORAM WAY	40218
-                39	CALIFORNIA	1104 SOUTH 16TH ST	40210
-                40	SUN VALLEY GOLF COURSE	6505 BETHANY LN	40272
+            {id: 9, parkName: "CAMP TAYLOR",	address: "4201 LEE AVE",	zipCode: 40213, visited: false,},
+            {id: 10, parkName: "CANE RUN",	address: "4816 CANE RUN RD", zipCode: 40216, visited: false,},
+            {id: 11, parkName: "CAPERTON SWAMP",	address: "3916 RIVER RD",	zipCode: 40207, visited: false,},
+            {id: 12, parkName: "CENTRAL",	address: "1340 SOUTH FOURTH ST", zipCode: 40208, visited: false,},
+            {id: 13, parkName: "CHICKASAW",	address: "1200 SOUTHWESTERN PKWY",	zipCode: 40211, visited: false,},
+            {id: 14, parkName: "CLIFF",	address: "4666 CLIFF AVE",	zipCode: 40215, visited: false,},
+            {id: 15, parkName: "CLIFTON", address: "133 NORTH CHARLTON ST",	zipCode: 40206, visited: false,},
+            {id: 16, parkName: "CARRIE GAULBERT COX",	address: "3730 RIVER RD",	zipCode: 40207, visited: false,},
+            {id: 17, parkName: "DOUGLASS",	address: "2305 DOUGLASS BLVD",	zipCode: 40205, visited: false,},
+            {id: 18, parkName: "EASTOVER",	address: "118 SACRED HEART LN",	zipCode: 40206, visited: false,},
+            {id: 19, parkName: "FAIRDALE MINI", address: "10714 WEST MANSLICK RD",	zipCode: 40118, visited: false,},
+            {id: 20, parkName: "FLAGET FIELD",	address: "4425 GREENWOOD AVE",	zipCode: 40211, visited: false,},
+            {id: 21, parkName: "GERMAN-PARISTOWN",	address: "1134 EAST KENTUCKY ST",	zipCode: 40204, visited: false,},
+            {id: 22, parkName: "GNADINGER", address: "103 ELLISON AVE",	zipCode: 40204, visited: false,},
+            {id: 23, parkName: "WILLIAM HARRISON",	address: "3232 OLEANDA AVE",	zipCode: 40215, visited: false,},
+            {id: 24, parkName: "HOPEWELL",	address: "509 NORTH BIRCHWOOD AVE",	zipCode: 40206, visited: false,},
+            {id: 25, parkName: "NELSON HORNBECK",	address: "709 FAIRDALE RD",	zipCode: 40118, visited: false,},
+            {id: 26, parkName: "HOUNZ LANE",	address: "2300 HOUNZ LN",	zipCode: 40223, visited: false,},
+            {id: 27, parkName: "IRISH HILL",	address: "1131 LEXINGTON RD",	zipCode: 40204, visited: false,},
+            {id: 28, parkName: "LOUIS B. ISRAEL", address: "4708 SOUTH FIRST ST",	zipCode: 40214, visited: false,},
+            {id: 29, parkName: "HAYS KENNEDY",	address: "7303 BEACHLAND BEACH RD",	zipCode: 40059, visited: false,},
+            {id: 30, parkName: "KENNEDY COURT",	address: "225 KENNEDY AVE",	zipCode: 40206, visited: false,},
+            {id: 31, parkName: "KLONDIKE",	address: "3809 KLONDIKE LN",	zipCode: 40218, visited: false,},
+              /*  32,	KULMER RESERVE	17200 KULMER BEACH RD	40177
+                33,	LAKE DREAMLAND	4400 LAKE DREAMLAND RD	40216
+                34,	SENECA GOLF COURSE	 2300 PEE WEE REESE RD	40205
+                35,	CHARLES YOUNG	2721 LYTLE ST	40212
+                36,	ROBERSON RUN	8205 JUDGE BLVD	40219
+                37,	IROQUOIS GOLF COURSE	1501 RUNDILL RD	40214
+                38,	NORFOLK ACRES	 4300 CORAM WAY	40218
+                39,	CALIFORNIA	1104 SOUTH 16TH ST	40210
+                40,	SUN VALLEY GOLF COURSE	6505 BETHANY LN	40272
                 41	LAPORTE	2529 BANK ST	40212
                 42	ELLIOT SQUARE	630 SOUTH 28TH ST	40211
                 43	EMERSON	1100 SYLVIA ST	40217
@@ -54,7 +54,7 @@ const app = new Vue ({
                 49	LONG RUN CEMETERY	 	
                 50	DAVID ARMSTRONG EXTREME 	148 NORTH CLAY ST	40202
                 51	MAGNOLIA	1407 SOUTH SECOND ST	40208
-                52	MEDORA	6210 PENDLETON RD	40272
+                52	MEDORA	6210 PENDLETON RD	40272 /*
                 53	MEMORIAL	971 SOUTH FOURTH ST	40203
                 54	G.G. MOORE	626 M ST	40208
                 55	PARKHILL	1703 SOUTH 13TH ST	40210
