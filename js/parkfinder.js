@@ -35,71 +35,70 @@ const app = new Vue ({
             {id: 30, parkName: "KENNEDY COURT",	address: "225 KENNEDY AVE",	zipCode: 40206, visited: false,},
             {id: 31, parkName: "KLONDIKE",	address: "3809 KLONDIKE LN",	zipCode: 40218, visited: false,},
             {id: 32, parkName: "LAKE DREAMLAND", address: "4400 LAKE DREAMLAND RD",	zipCode: 40216, visited: false,},
-            {id: 34,	parkName: "SENECA GOLF COURSE",	 address: "2300 PEE WEE REESE RD",	zipCode: 40205, visited: false,},
-            {id: 35,	parkName: "CHARLES YOUNG",	address: "2721 LYTLE ST",	zipCode: 40212, visited: false,},
-            {id: 36,	parkName: "ROBERSON RUN",	address: "8205 JUDGE BLVD",	zipCode: 40219, visited: false,},
-            {id: 37,	parkName: "IROQUOIS GOLF COURSE",	address: "1501 RUNDILL RD",	zipCode: 40214, visited: false,},
-            {id: 38,	parkName: "NORFOLK ACRES",	address: "4300 CORAM WAY",	zipCode: 40218, visited: false,},
-            {id: 39,	parkName: "CALIFORNIA",	address: "1104 SOUTH 16TH ST",	zipCode: 40210, visited: false,},/*
-            {id: 40,	SUN VALLEY GOLF COURSE	"6505 BETHANY LN",	zipCode: 40272, visited: false,},
-            {id: 41,	LAPORTE	"2529 BANK ST",	zipCode: 40212, visited: false,},
-            {id: 42,	ELLIOT SQUARE	"630 SOUTH 28TH ST",	zipCode: 40211, visited: false,},
-            {id: 43,	EMERSON	"1100 SYLVIA ST",	zipCode: 40217, visited: false,},
-            {id: 44,	MCNEELY LAKE	"10500 CEDAR CREEK RD",	zipCode: 40229, visited: false,},
-            {id: 45,	BOONE SQUARE	"1935 ROWAN ST",	zipCode: 40203, visited: false,},
-            {id: 46,	OLD WALNUT / BEECHER	"904 WEST MUHAMMAD ALI BLVD",	zipCode: 40203, visited: false,},
-            {id: 47,	SLEVIN	"341 NORTH 25TH ST",	zipCode: 40212, visited: false,},
-            {id: 48, parkName: "RUSSELL LEE",	address: "3701 SOUTHERN AVE",	zipCode: 40211, visited: false,},
-            {id: 49,	LONG RUN CEMETERY	 	
-                50,	DAVID ARMSTRONG EXTREME 	148 NORTH CLAY ST	40202
-                51,	MAGNOLIA	1407 SOUTH SECOND ST	40208
-                52,	MEDORA	6210 PENDLETON RD	40272 /*
-                53	MEMORIAL	971 SOUTH FOURTH ST	40203
-                54	G.G. MOORE	626 M ST	40208
-                55	PARKHILL	1703 SOUTH 13TH ST	40210
-                56	PATTERSON	1418 MORTON AVE	40204
-                57	PEEWEE	2913 KLONDIKE LN	40218
-                58	HUSTON QUIN	4105 SOUTH FIRST ST	40214
-                59	GINNY REICHARD	1001FRANKLIN ST	40206
-                60	RIVERSIDE GARDENS	2899 LEES LN	40216
-                61	RIVERVIEW	8202 GREENWOOD RD	40258
-                62	RIVERSIDE, THE FARNSLEY-MOREMAN LANDING	7410 MOORMAN RD	40272
-                63	RUBEL	667 BARRETAVE	40204
-                64	SHAWNEE	4501 WEST BROADWAY	40211
-                65	SHELBY	600 EAST OAK ST	40203
-                66	STORY AVENUE	1531 STORY AVE	40206
-                67	SYLVANIA	6650 SYLVANIA RD	40258
-                68	TWIN PARK	3145 RIVER RD	40207
-                69	TYLER	1501 CASTLEWOOD AVE	40204
-                70	WATTERSON LAKE	1714 SOUTH WHEATMORE DR	40215
-                71	WAYSIDE	3190 SOUTH THIRD ST	40214
-                72	WILLOW	 1402 WILLOW AVE	40204
-                73	GEORGE ROGERS CLARK	1024 THRUSTON AVE	40217
-                74	CHEROKEE	745 COCHRAN HILL RD	40206
-                75	JEFFERSON MEMORIAL FOREST	11311 MITCHELL HILL	40118
-                76	E. LELAND TAYLOR	 317 NORTH 38TH ST	40212
-                77	SHAWNEE GOLF COURSE	460 NORTHWESTERN PKWY	40212
-                78	WILLIAM BRITT	2801 MAGAZINE ST	40211
-                79	PORTLAND WHARF	719 NORTH 32ND ST	40212
-                80	PORTLAND	640 NORTH 27TH ST	40212
-                81	WESTONIA	 2900 ROWAN ST	40212
-                82	HIGHVIEW	7201 OUTER LOOP	40228
-                83	SHEPPARD	 1601 MAGAZINE ST	40203
-                84	OKOLONA	1114 CLAY AVE	40219
-                85	CRESCENT HILL GOLF COURSE	3110 BROWNSBORO RD	40206
-                86	FARNSLEY	3100 WEDGEWOOD WAY	40220
-                87	CROSBY	11500 CEDARDALE RD	40223
-                88	VICTORY	1051 SOUTH 23RD ST	40210
-                89	ST LOUIS	2023 ST LOUIS AVE	40210
-                90	DES PRES	4709 LOWE RD	40220
-                91	IVY COURT	 3245 LARKWOOD AVE	40212
-                92	LONG RUN GOLF COURSE	1605 FLAT ROCK RD	40245
-                93	SUN VALLEY	6505 BETHANY LN	40272
-                94	CHARLIE VETTINER GOLF COURSE	10207 MARY DELL LN	40299
-                95	WAVERLY	 4800 WAVERLY PARK RD	40214
-                96	CHARLIE VETTINER	5550 CHARLIE VETTINER PARK RD	40299
-                97	IROQUOIS	2120 RUNDILL RD	40214
-                98	SENECA	3151 PEE WEE REESE RD	40205
+            {id: 34, parkName: "SENECA GOLF COURSE",	 address: "2300 PEE WEE REESE RD",	zipCode: 40205, visited: false,},
+            {id: 35, parkName: "CHARLES YOUNG",	address: "2721 LYTLE ST",	zipCode: 40212, visited: false,},
+            {id: 36, parkName: "ROBERSON RUN",	address: "8205 JUDGE BLVD",	zipCode: 40219, visited: false,},
+            {id: 37, parkName: "IROQUOIS GOLF COURSE",	address: "1501 RUNDILL RD",	zipCode: 40214, visited: false,},
+            {id: 38, parkName: "NORFOLK ACRES",	address: "4300 CORAM WAY",	zipCode: 40218, visited: false,},
+            {id: 39, parkName: "CALIFORNIA",	address: "1104 SOUTH 16TH ST",	zipCode: 40210, visited: false,},
+            {id: 40, parkName: "SUN VALLEY GOLF COURSE", address: "6505 BETHANY LN",	zipCode: 40272, visited: false,},
+            {id: 41, parkName: "LAPORTE",	address: "2529 BANK ST",	zipCode: 40212, visited: false,},
+            {id: 42, parkName: "ELLIOT SQUARE",	address: "630 SOUTH 28TH ST",	zipCode: 40211, visited: false,},
+            {id: 43, parkName: "EMERSON",	address: "1100 SYLVIA ST",	zipCode: 40217, visited: false,},
+            {id: 44, parkName: "MCNEELY LAKE",	address: "10500 CEDAR CREEK RD",	zipCode: 40229, visited: false,},
+            {id: 45, parkName: "BOONE SQUARE",	address: "1935 ROWAN ST",	zipCode: 40203, visited: false,},
+            {id: 46, parkName: "OLD WALNUT / BEECHER",	address: "904 WEST MUHAMMAD ALI BLVD",	zipCode: 40203, visited: false,},
+            {id: 47, parkName: "SLEVIN",	address: "341 NORTH 25TH ST",	zipCode: 40212, visited: false,},
+            {id: 48, parkName: "RUSSELL LEE",	address: "3701 SOUTHERN AVE",	zipCode: 40211, visited: false,},	 	
+            {id: 50, parkName: "DAVID ARMSTRONG EXTREME", address: "148 NORTH CLAY ST",	zipCode: 40202, visited: false,},
+            {id: 51, parkName: "MAGNOLIA", address: "1407 SOUTH SECOND ST",	zipCode: 40208, visited: false,},
+            {id: 52, parkName: "MEDORA",	address: "6210 PENDLETON RD",	zipCode: 40272, visited: false,},
+            {id: 53, parkName: "MEMORIAL",	address: "971 SOUTH FOURTH ST",	zipCode: 40203, visited: false,},
+            {id: 54, parkName: "G.G. MOORE",	address: "626 M ST",	zipCode: 40208, visited: false,},
+            {id: 55, parkName: "PARKHILL",	address: "1703 SOUTH 13TH ST",	zipCode: 40210, visited: false,},
+            {id: 56, parkName: "PATTERSON",	address: "1418 MORTON AVE",	zipCode: 40204, visited: false,},
+            {id: 57, parkName: "PEEWEE",	address: "2913 KLONDIKE LN",	zipCode: 40218, visited: false,},
+            {id: 58, parkName: "HUSTON QUIN",	address: "4105 SOUTH FIRST ST",	zipCode: 40214, visited: false,},
+            {id: 59, parkName: "GINNY REICHARD",	address: "1001 FRANKLIN ST",	zipCode: 40206, visited: false,},
+            {id: 60, parkName: "RIVERSIDE GARDENS",	address: "2899 LEES LN",	zipCode: 40216, visited: false,},
+            {id: 61, parkName: "RIVERVIEW",	address: "8202 GREENWOOD RD",	zipCode: 40258, visited: false,},
+            {id: 62, parkName: "RIVERSIDE, THE FARNSLEY-MOREMAN LANDING",	address: "7410 MOORMAN RD",	zipCode: 40272, visited: false,},
+            {id: 63, parkName: "RUBEL", address: "667 BARRET AVE",	zipCode: 40204, visited: false,},
+            {id: 64, parkName: "SHAWNEE",	address: "4501 WEST BROADWAY",	zipCode: 40211, visited: false,},
+            {id: 65, parkName: "SHELBY",	address: "600 EAST OAK ST",	zipCode: 40203, visited: false,},
+            {id: 66, parkName: "STORY AVENUE",	address: "1531 STORY AVE",	zipCode: 40206, visited: false,},
+            {id: 67, parkName: "SYLVANIA",	address: "6650 SYLVANIA RD",	zipCode: 40258, visited: false,},
+            {id: 68, parkName: "TWIN PARK",	address: "3145 RIVER RD",	zipCode: 40207, visited: false,},
+            {id: 69, parkName: "TYLER",	address: "1501 CASTLEWOOD AVE",	zipCode: 40204, visited: false,},
+            {id: 70, parkName: "WATTERSON LAKE",	address: "1714 SOUTH WHEATMORE DR",	zipCode: 40215, visited: false,},
+            {id: 71, parkName: "WAYSIDE",	address: "3190 SOUTH THIRD ST",	zipCode: 40214, visited: false,},
+            {id: 72, parkName: "WILLOW",	address:  "1402 WILLOW AVE",	zipCode: 40204, visited: false,},
+            {id: 73, parkName: "GEORGE ROGERS CLARK",	address: "1024 THRUSTON AVE",	zipCode: 40217, visited: false,},
+            {id: 74, parkName: "CHEROKEE",	address: "745 COCHRAN HILL RD",	zipCode: 40206, visited: false,},
+            {id: 75, parkName: "JEFFERSON MEMORIAL FOREST",	address: "11311 MITCHELL HILL",	zipCode: 40118, visited: false,},
+            {id: 76, parkName: "E. LELAND TAYLOR",	address: "317 NORTH 38TH ST",	zipCode: 40212, visited: false,},
+            {id: 77, parkName: "SHAWNEE GOLF COURSE",	address: "460 NORTHWESTERN PKWY",	zipCode: 40212, visited: false,},
+            {id: 78, parkName: "WILLIAM BRITT",	address: "2801 MAGAZINE ST",	zipCode: 40211, visited: false,},
+            {id: 79, parkName: "PORTLAND WHARF",	address: "719 NORTH 32ND ST",	zipCode: 40212, visited: false,},
+            {id: 80, parkName: "PORTLAND",	address: "640 NORTH 27TH ST",	zipCode: 40212, visited: false,},
+            {id: 81, parkName: "WESTONIA",	 address: "2900 ROWAN ST",	zipCode: 40212, visited: false,},
+            {id: 82, parkName: "HIGHVIEW",	address: "7201 OUTER LOOP",	zipCode: 40228, visited: false,},
+            {id: 83, parkName: "SHEPPARD",	 address: "1601 MAGAZINE ST",	zipCode: 40203, visited: false,},
+            {id: 84, parkName: "OKOLONA",	address: "1114 CLAY AVE",	zipCode: 40219, visited: false,},
+            {id: 85, parkName: "CRESCENT HILL GOLF COURSE",	address: "3110 BROWNSBORO RD",	zipCode: 40206, visited: false,},
+            {id: 86, parkName: "FARNSLEY",	address: "3100 WEDGEWOOD WAY", zipCode: 40220, visited: false,},
+            {id: 87, parkName: "CROSBY",	address: "11500 CEDARDALE RD", zipCode: 40223, visited: false,},
+            {id: 88, parkName: "VICTORY",	address: "1051 SOUTH 23RD ST", zipCode: 40210, visited: false,},
+            {id: 89, parkName: "ST LOUIS",	address: "2023 ST LOUIS AVE", zipCode: 40210, visited: false,},
+            {id: 90, parkName: "DES PRES",	address: "4709 LOWE RD", zipCode: 40220, visited: false,},
+            {id: 91, parkName: "IVY COURT",	 address: "3245 LARKWOOD AVE", zipCode: 40212, visited: false,},
+            {id: 92, parkName: "LONG RUN GOLF COURSE",	address: "1605 FLAT ROCK RD", zipCode: 40245, visited: false,},
+            {id: 93, parkName: "SUN VALLEY",	address: "6505 BETHANY LN", zipCode: 40272, visited: false,},
+            {id: 94, parkName: "CHARLIE VETTINER GOLF COURSE",	address: "10207 MARY DELL LN", zipCode: 40299, visited: false,},
+            {id: 95, parkName: "WAVERLY",	 address: "4800 WAVERLY PARK RD", zipCode: 40214, visited: false,},
+            {id: 96, parkName: "CHARLIE VETTINER",	address: "5550 CHARLIE VETTINER PARK RD", zipCode: 40299, visited: false,},
+            {id: 97, parkName: "IROQUOIS",	address: "2120 RUNDILL RD", zipCode: 40214, visited: false,},
+             /*   98	SENECA	3151 PEE WEE REESE RD	40205
                 99	CHEROKEE GOLF COURSE	2501 ALEXANDER RD	40204
                 100	THURMAN HUTCHINS	3734 RIVER RD	40207
                 101	BAXTER SQUARE	301 SOUTH 12TH ST	40203
@@ -168,15 +167,15 @@ const app = new Vue ({
                 164	Skyview Park	2700 Watterson Trail	40299
                 165	Plainview Swim Center	10235 Timberwood Circle	40223
                 166	Waterfront Park	1101 River Rd	40206
-                167	Mount Washington  Community Park	176 Park View Ave	40047
-                168	Lindsay Duvall Park	100 Newman Way	40047
-                169	Frank Cornell Park	977 Waterford Rd	40047
-                170	Maples Park	6826 W Hwy 22	40014
-                171	Briar Hill Park	7400 E Orchard Gras Blvd	40014
-                172	Wendell Moore Park	1551 Hwy 393	40031
-                173	Schamback Park	6617 Main St	40077
-                174	Peggy E. Baker Park	6887 Rte 2858	40014
-                175	Morgan Conservation Park	1200 Kentucky 524	40031
+                167	Mount Washington  Community Park	176 Park View Ave",	zipCode: 40047, visited: false,},
+                {id: 168,	Lindsay Duvall Park	100 Newman Way",	zipCode: 40047, visited: false,},
+                {id: 169,	Frank Cornell Park	977 Waterford Rd",	zipCode: 40047, visited: false,},
+                {id: 170,	Maples Park	6826 W Hwy 22",	zipCode: 40014, visited: false,},
+                {id: 171,	Briar Hill Park	7400 E Orchard Gras Blvd	40014
+                {id: 172,	Wendell Moore Park	1551 Hwy 393	40031
+                {id: 173,	Schamback Park	6617 Main St	40077
+                {id: 174,	Peggy E. Baker Park	6887 Rte 2858	40014
+                {id: 175,	Morgan Conservation Park	1200 Kentucky 524	40031
                 176	54 Acre Multi-Use Park	3930 Highway 146	40031
                 177	Celebration Park		
                 178	Creasey Mahan Nature Preserve	12501 Harmony Landing Rd	40026
