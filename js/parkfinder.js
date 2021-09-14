@@ -2,7 +2,8 @@ const app = new Vue ({
 	el: '#app',
 	data() {
 		return {
-			parks: [
+			selectedPark: "",
+            parks: [
 			{id: 1,	parkName: '35TH STREET', 	address: "814 SOUTH 35TH ST",	zipCode: 40211, visited: false,},
             {id: 2,	parkName: "CRESCENT HILL",	address: "3110 BROWNSBORO RD",	zipCode: 40206, visited: false,},
             {id: 3, parkName: "ALGONQUIN",	address: "1614 CYPRESS ST",	zipCode: 40210, visited: false,},

@@ -6,11 +6,7 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
     <script src="./js/parkfinder.js" defer></script>
-    <script>
-        function save() {
-            localStorage.setItem('library.visited', true)
-        }
-    </script>
+    
     <title>Kentuckiana Parks</title>
 </head>
 <body>
@@ -19,8 +15,8 @@
     <div id='app'>
 		<h1>Kentuckiana Parks</h1>
         <label for="favoritepark">Choose your favorite park:</label>
-		<input list= "parks" name="favoritepark", id="favoritepark">
-            <datalist id="parks" v-for="park in parks" :key='park.id'>
+		<input list= "parks" name="favoritepark" id="favoritepark" v-model='selectedPark'>
+            <datalist id="parks">
                 <option value="35TH STREET">
                 <option value="CRESCENT HILL">
                 <option value="ALGONQUIN">
@@ -66,7 +62,7 @@
                 <option value="EMERSON">
                 <option value="MCNEELY LAKE">
                 <option value="BOONE SQUARE">
-                <option value="OLD WALNUT / BEECHER">
+                <option value="OLD WALNUT BEECHER">
                 <option value="SLEVIN">
                 <option value="RUSSELL LEE">
                 <option value="LONG RUN CEMETERY">
@@ -316,11 +312,11 @@
 			<table>
 			<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>Visited</td></thead>
 			<div>
-			<tr v-for="park in parks" :key='park.id' v-show='park.visited != true'>
+			<tr v-for="park in parks" :key='park.id' v-show='park.parkName === true'>
 				<td>{{ park.parkName }}</td>
 				<td>{{ park.address }}</td>
 				<td>{{ park.zipCode }}</td>
-				<td><input type="checkbox" onclick='save()' v-model='park.visited'></input></td>
+				<td><input type="checkbox" v-model='park.visited'></input></td>
           </tr>
 		  </table>
 		  </div>
