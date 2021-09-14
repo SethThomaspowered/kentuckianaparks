@@ -34,27 +34,26 @@ const app = new Vue ({
             {id: 29, parkName: "HAYS KENNEDY",	address: "7303 BEACHLAND BEACH RD",	zipCode: 40059, visited: false,},
             {id: 30, parkName: "KENNEDY COURT",	address: "225 KENNEDY AVE",	zipCode: 40206, visited: false,},
             {id: 31, parkName: "KLONDIKE",	address: "3809 KLONDIKE LN",	zipCode: 40218, visited: false,},
-              /*  32,	KULMER RESERVE	17200 KULMER BEACH RD	40177
-                33,	LAKE DREAMLAND	4400 LAKE DREAMLAND RD	40216
-                34,	SENECA GOLF COURSE	 2300 PEE WEE REESE RD	40205
-                35,	CHARLES YOUNG	2721 LYTLE ST	40212
-                36,	ROBERSON RUN	8205 JUDGE BLVD	40219
-                37,	IROQUOIS GOLF COURSE	1501 RUNDILL RD	40214
-                38,	NORFOLK ACRES	 4300 CORAM WAY	40218
-                39,	CALIFORNIA	1104 SOUTH 16TH ST	40210
-                40,	SUN VALLEY GOLF COURSE	6505 BETHANY LN	40272
-                41	LAPORTE	2529 BANK ST	40212
-                42	ELLIOT SQUARE	630 SOUTH 28TH ST	40211
-                43	EMERSON	1100 SYLVIA ST	40217
-                44	MCNEELY LAKE	10500 CEDAR CREEK RD	40229
-                45	BOONE SQUARE	1935 ROWAN ST	40203
-                46	OLD WALNUT / BEECHER	904 WEST MUHAMMAD ALI BLVD	40203
-                47	SLEVIN	341 NORTH 25TH ST	40212
-                48	RUSSELL LEE	3701 SOUTHERN AVE	40211
-                49	LONG RUN CEMETERY	 	
-                50	DAVID ARMSTRONG EXTREME 	148 NORTH CLAY ST	40202
-                51	MAGNOLIA	1407 SOUTH SECOND ST	40208
-                52	MEDORA	6210 PENDLETON RD	40272 /*
+            {id: 32, parkName: "LAKE DREAMLAND", address: "4400 LAKE DREAMLAND RD",	zipCode: 40216, visited: false,},
+            {id: 34,	parkName: "SENECA GOLF COURSE",	 address: "2300 PEE WEE REESE RD",	zipCode: 40205, visited: false,},
+            {id: 35,	parkName: "CHARLES YOUNG",	address: "2721 LYTLE ST",	zipCode: 40212, visited: false,},
+            {id: 36,	parkName: "ROBERSON RUN",	address: "8205 JUDGE BLVD",	zipCode: 40219, visited: false,},
+            {id: 37,	parkName: "IROQUOIS GOLF COURSE",	address: "1501 RUNDILL RD",	zipCode: 40214, visited: false,},
+            {id: 38,	parkName: "NORFOLK ACRES",	address: "4300 CORAM WAY",	zipCode: 40218, visited: false,},
+            {id: 39,	parkName: "CALIFORNIA",	address: "1104 SOUTH 16TH ST",	zipCode: 40210, visited: false,},/*
+            {id: 40,	SUN VALLEY GOLF COURSE	"6505 BETHANY LN",	zipCode: 40272, visited: false,},
+            {id: 41,	LAPORTE	"2529 BANK ST",	zipCode: 40212, visited: false,},
+            {id: 42,	ELLIOT SQUARE	"630 SOUTH 28TH ST",	zipCode: 40211, visited: false,},
+            {id: 43,	EMERSON	"1100 SYLVIA ST",	zipCode: 40217, visited: false,},
+            {id: 44,	MCNEELY LAKE	"10500 CEDAR CREEK RD",	zipCode: 40229, visited: false,},
+            {id: 45,	BOONE SQUARE	"1935 ROWAN ST",	zipCode: 40203, visited: false,},
+            {id: 46,	OLD WALNUT / BEECHER	"904 WEST MUHAMMAD ALI BLVD",	zipCode: 40203, visited: false,},
+            {id: 47,	SLEVIN	"341 NORTH 25TH ST",	zipCode: 40212, visited: false,},
+            {id: 48, parkName: "RUSSELL LEE",	address: "3701 SOUTHERN AVE",	zipCode: 40211, visited: false,},
+            {id: 49,	LONG RUN CEMETERY	 	
+                50,	DAVID ARMSTRONG EXTREME 	148 NORTH CLAY ST	40202
+                51,	MAGNOLIA	1407 SOUTH SECOND ST	40208
+                52,	MEDORA	6210 PENDLETON RD	40272 /*
                 53	MEMORIAL	971 SOUTH FOURTH ST	40203
                 54	G.G. MOORE	626 M ST	40208
                 55	PARKHILL	1703 SOUTH 13TH ST	40210
