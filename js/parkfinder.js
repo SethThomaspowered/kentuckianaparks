@@ -291,8 +291,7 @@ const app = new Vue ({
             {id: 286,	parkName: "Meade-Olin Park",	address: "163 Moremen Rd",	zipCode: "40108", visited: false,},
             {id: 287,	parkName: "Otter Creek Recreation Area",	address: "", zipCode: "", visited: false,},		
             {id: 288,	parkName: "Wolf Creek Park",	address: "", zipCode: "", visited: false,},		
-            {id: 289,	parkName: "YMCA Camp Piomingo",	address: "", zipCode: "", visited: false,}, 		
-            {id: 289,	parkName: "YMCA Camp Piomingo",	address: "", zipCode: "", visited: false,},		
+            {id: 289,	parkName: "YMCA Camp Piomingo",	address: "", zipCode: "", visited: false,}, 				
             {id: 290,	parkName: "Bernheim Arboretum and Research Forest",	address: "2075 Clermont Rd", zipCode: "40110", visited: false,},
 			]
 		}
