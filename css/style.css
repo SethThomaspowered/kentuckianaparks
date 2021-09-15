@@ -9,3 +9,10 @@ body {
 h1 {
     background-color: rgb(165, 42, 42);
 }
+td {
+	border: 1px solid black;
+  display: flexbox;
+  width: 25%;
+  text-align: center;
+  margin-right: 0px;
+}
