@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" >
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
     <script src="./js/parkfinder.js" defer></script>
@@ -14,7 +14,7 @@
     <p>We hope to be your first stop when it comes to Louisville area parks.</p>
     <div id='app'>
 		<h1>Kentuckiana Parks</h1>
-        <label for="favoritepark">Choose your favorite park:</label>
+        <label for="favoritepark">Search by park name:</label>
 		<input list= "parks" name="favoritepark" id="favoritepark" v-model='selectedPark'>
             <datalist id="parks">
                 <option value="35TH STREET">
@@ -314,7 +314,7 @@
 			<table>
 			<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>Visited</td></thead>
 			<div>
-			<tr v-for="park in parks" :key='park.id' v-show='park.zipCode === selectedZipCode'>
+			<tr v-for="park in parks" :key='park.id' v-show='park.parkName === selectedPark '>
 				<td>{{ park.parkName }}</td>
 				<td>{{ park.address }}</td>
 				<td>{{ park.zipCode }}</td>
