@@ -3,7 +3,7 @@ const app = new Vue ({
 	data() {
 		return {
 			selectedPark: "",
-            selectedZipCode: 40202,
+            selectedZipCode: "40202",
             parks: [
 			{id: 1,	parkName: '35TH STREET', 	address: "814 SOUTH 35TH ST",	zipCode: "40211", visited: false,},
             {id: 2,	parkName: "CRESCENT HILL",	address: "3110 BROWNSBORO RD",	zipCode: "40206", visited: false,},
