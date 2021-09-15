@@ -312,7 +312,7 @@
 			<table>
 			<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>Visited</td></thead>
 			<div>
-			<tr v-for="park in parks" :key='park.id' v-show='park.parkName === true'>
+			<tr v-for="park in parks" :key='park.id' v-show='park.parkName === selectedPark'>
 				<td>{{ park.parkName }}</td>
 				<td>{{ park.address }}</td>
 				<td>{{ park.zipCode }}</td>
