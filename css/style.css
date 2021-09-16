@@ -1,6 +1,18 @@
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 body {
     background-color: rgba(24, 128, 24, 0.5);
 }
 h1 {
     background-color: rgb(165, 42, 42);
+}
+td {
+	border: 1px solid black;
+  display: flexbox;
+  width: 25%;
+  text-align: center;
+  margin-right: 0px;
 }

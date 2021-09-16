@@ -2,15 +2,11 @@
 <html>
 <head>
     <meta charset="utf-8">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1" >
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
     <script src="./js/parkfinder.js" defer></script>
-    <script>
-        function save() {
-            localStorage.setItem('library.visited', true)
-        }
-    </script>
+    
     <title>Kentuckiana Parks</title>
 </head>
 <body>
@@ -18,15 +14,311 @@
     <p>We hope to be your first stop when it comes to Louisville area parks.</p>
     <div id='app'>
 		<h1>Kentuckiana Parks</h1>
-		<div class="park">
+        <label for="favoritepark">Search by park name:</label>
+		<input list= "parks" name="favoritepark" id="favoritepark" v-model='selectedPark'>
+            <datalist id="parks">
+                <option value="35TH STREET">
+                <option value="CRESCENT HILL">
+                <option value="ALGONQUIN">
+                <option value="BELLEVUE">
+                <option value="BEN WASHER">
+                <option value="BINGHAM">
+                <option value="BRADLEY">
+                <option value="BUECHEL">
+                <option value="CAMP TAYLOR">
+                <option value="CANE RUN">
+                <option value="CAPERTON SWAMP">
+                <option value="CENTRAL">
+                <option value="CHICKASAW">
+                <option value="CLIFF">
+                <option value="CLIFTON">
+                <option value="CARRIE GAULBERT COX">
+                <option value="DOUGLASS">
+                <option value="EASTOVER">
+                <option value="FAIRDALE MINI">
+                <option value="FLAGET FIELD">
+                <option value="GERMAN-PARISTOWN">
+                <option value="GNADINGER">
+                <option value="WILLIAM HARRISON">
+                <option value="HOPEWELL">
+                <option value="NELSON HORNBECK">
+                <option value="HOUNZ LANE">
+                <option value="IRISH HILL">
+                <option value="LOUIS B. ISRAEL">
+                <option value="HAYS KENNEDY">
+                <option value="KENNEDY COURT">
+                <option value="KLONDIKE">
+                <option value="KULMER RESERVE">
+                <option value="LAKE DREAMLAND">
+                <option value="SENECA GOLF COURSE">
+                <option value="CHARLES YOUNG">
+                <option value="ROBERSON RUN">
+                <option value="IROQUOIS GOLF COURSE">
+                <option value="NORFOLK ACRES">
+                <option value="CALIFORNIA">
+                <option value="SUN VALLEY GOLF COURSE">
+                <option value="LAPORTE">
+                <option value="ELLIOT SQUARE">
+                <option value="EMERSON">
+                <option value="MCNEELY LAKE">
+                <option value="BOONE SQUARE">
+                <option value="OLD WALNUT BEECHER">
+                <option value="SLEVIN">
+                <option value="RUSSELL LEE">
+                <option value="LONG RUN CEMETERY">
+                <option value="DAVID ARMSTRONG EXTREME ">
+                <option value="MAGNOLIA">
+                <option value="MEDORA">
+                <option value="MEMORIAL">
+                <option value="G.G. MOORE">
+                <option value="PARKHILL">
+                <option value="PATTERSON">
+                <option value="PEEWEE">
+                <option value="HUSTON QUIN">
+                <option value="GINNY REICHARD">
+                <option value="RIVERSIDE GARDENS">
+                <option value="RIVERVIEW">
+                <option value="RIVERSIDE, THE FARNSLEY-MOREMAN LANDING">
+                <option value="RUBEL">
+                <option value="SHAWNEE">
+                <option value="SHELBY">
+                <option value="STORY AVENUE">
+                <option value="SYLVANIA">
+                <option value="TWIN PARK">
+                <option value="TYLER">
+                <option value="WATTERSON LAKE">
+                <option value="WAYSIDE">
+                <option value="WILLOW">
+                <option value="GEORGE ROGERS CLARK">
+                <option value="CHEROKEE">
+                <option value="JEFFERSON MEMORIAL FOREST">
+                <option value="E. LELAND TAYLOR">
+                <option value="SHAWNEE GOLF COURSE">
+                <option value="WILLIAM BRITT">
+                <option value="PORTLAND WHARF">
+                <option value="PORTLAND">
+                <option value="WESTONIA">
+                <option value="HIGHVIEW">
+                <option value="SHEPPARD">
+                <option value="OKOLONA">
+                <option value="CRESCENT HILL GOLF COURSE">
+                <option value="FARNSLEY">
+                <option value="CROSBY">
+                <option value="VICTORY">
+                <option value="ST LOUIS">
+                <option value="DES PRES">
+                <option value="IVY COURT">
+                <option value="LONG RUN GOLF COURSE">
+                <option value="SUN VALLEY">
+                <option value="CHARLIE VETTINER GOLF COURSE">
+                <option value="WAVERLY">
+                <option value="CHARLIE VETTINER">
+                <option value="IROQUOIS">
+                <option value="SENECA">
+                <option value="CHEROKEE GOLF COURSE">
+                <option value="THURMAN HUTCHINS">
+                <option value="BAXTER SQUARE">
+                <option value="LONG RUN">
+                <option value="AUBURNDALE">
+                <option value="BALLARD">
+                <option value="BERRYTOWN">
+                <option value="BLACK MUDD">
+                <option value="BLUE LICK">
+                <option value="BOBBY NICHOLS GOLF COURSE">
+                <option value="BRESLIN">
+                <option value="CHURCHILL">
+                <option value="FAIRMONT FALLS">
+                <option value="FARMAN">
+                <option value="FERN CREEK">
+                <option value="FISHERMAN'S">
+                <option value="JOE CREASON">
+                <option value="LANNAN">
+                <option value="PETERSBURG">
+                <option value="SOUTH CENTRAL">
+                <option value="TOONERVILLE TROLLEY">
+                <option value="WYANDOTTE">
+                <option value="EVA BANDMAN">
+                <option value="BEARGRASS CREEK GREENWAY AT IRISH HILL">
+                <option value="WILLIAM B. STANSBURY">
+                <option value="A.B. SAWYER">
+                <option value="LOCUST GROVE">
+                <option value="BEECHMONT TOT LOT">
+                <option value="CASTLEWOOD OPEN SPACE">
+                <option value="CALIFORNIA LEISURE OPEN SPACE">
+                <option value="PARKLAND PLAYGROUND">
+                <option value="ROSE FARM">
+                <option value="WATSON LANE TRAILHEAD">
+                <option value="SCHUFF LANE GREENWAY">
+                <option value="CLIFTON HEIGHTS GREENWAY">
+                <option value="CYRIL ALLGEIER COMMUNITY CENTER">
+                <option value="BECKLEY CREEK PARK">
+                <option value="PATRIOTS PEACE MEMORIAL">
+                <option value="BUECHEL PARCEL">
+                <option value="MAHONEY">
+                <option value="PETERSON">
+                <option value="JEFFERSON MEMORIAL PARCEL 22">
+                <option value="SOUTHERN PARKWAY">
+                <option value="EASTERN PARKWAY">
+                <option value="NORTHWESTERN PARKWAY">
+                <option value="SOUTHWESTERN PARKWAY">
+                <option value="ALGONQUIN PARKWAY">
+                <option value="POPE LICK PARK">
+                <option value="TURKEY RUN">
+                <option value="BROAD RUN">
+                <option value="A.B. SAWYER GREENWAY">
+                <option value="LOUISVILLE CHAMPIONS SOCCER">
+                <option value="LOUISVILLE CHAMPIONS">
+                <option value="GALVIN COURT">
+                <option value="THE STRAND">
+                <option value="QUAIL CHASE GOLF COURSE ">
+                <option value="ARTHUR K. DRAUT PARK">
+                <option value="Brown Park">
+                <option value="Community Park">
+                <option value="Warwick Park">
+                <option value="Hal Warheim Park">
+                <option value="ROBSION Park">
+                <option value="AUBURN PARK">
+                <option value="Jeffersontown Memorial Park">
+                <option value="David L Armstrong Recreation Center">
+                <option value="Skyview Park">
+                <option value="Plainview Swim Center">
+                <option value="Waterfront Park">
+                <option value="Mount Washington  Community Park">
+                <option value="Lindsay Duvall Park">
+                <option value="Frank Cornell Park">
+                <option value="Maples Park">
+                <option value="Briar Hill Park">
+                <option value="Wendell Moore Park">
+                <option value="Schamback Park">
+                <option value="Peggy E. Baker Park">
+                <option value="Morgan Conservation Park">
+                <option value="54 Acre Multi-Use Park">
+                <option value="Celebration Park">
+                <option value="Creasey Mahan Nature Preserve">
+                <option value="PeeWee Valley Central Park">
+                <option value="Walsh Park">
+                <option value="Wilborn Park">
+                <option value="Shirley's Arbor">
+                <option value="Chapel Lake Park">
+                <option value="Perrin Family Park">
+                <option value="Glossbrenner Public Garden">
+                <option value="Harmony Park">
+                <option value="Big 4 Station Park">
+                <option value="Jeffersonville Skate Park">
+                <option value="Shirley Hall Park">
+                <option value="Woehrle Athletic Complex">
+                <option value="Riverstage">
+                <option value="Nachand Fieldhouse">
+                <option value="Jeffersonville Aquatic Center">
+                <option value="Veterans Memorial Park">
+                <option value="W.F. Throckmorton Park">
+                <option value="Samuel G. Shannon Memorial Park">
+                <option value="Richard L. Vissing Park">
+                <option value="Highland Dog Park">
+                <option value="John Wilcoxson Park">
+                <option value="Ricard B. Wathen Park">
+                <option value="Luther F. Warder Park">
+                <option value="Steamboat Park">
+                <option value="S. Harlan Vogt Park">
+                <option value="Preservation Park">
+                <option value="Port Fulton Park">
+                <option value="Poppy Park">
+                <option value="Meadows Park">
+                <option value="Lottie Oglesby Park">
+                <option value="Kyle Vissing Park">
+                <option value="Pamela J Inman Park">
+                <option value="Henry Landsen Park">
+                <option value="Gaither Park">
+                <option value="Forest Park">
+                <option value="James T. Duffy's Landing">
+                <option value="Connie Sellmer Park">
+                <option value="Bob Hedge Park">
+                <option value="Allison Brook Park">
+                <option value="Ashland Park">
+                <option value="Beechwood Park">
+                <option value="Cedar Park">
+                <option value="Colgate Park">
+                <option value="Gaskell Park">
+                <option value="Gateway Park">
+                <option value="Lapping Park">
+                <option value="Lewis and Clark Park">
+                <option value="Parkwood Park">
+                <option value="Ray Lawrence Park">
+                <option value="Anderson Park">
+                <option value="Bicknell Park">
+                <option value="Billy Herman Park">
+                <option value="Binford Park">
+                <option value="Cannon Acres Soccer Field">
+                <option value="Cherry Valley Golf Course">
+                <option value="Divison Street">
+                <option value="Fairmont Park">
+                <option value="Griffin Recreation Center">
+                <option value="Joe Kraft Park">
+                <option value="Millerwood Park">
+                <option value="New Albany Dog Park">
+                <option value="Ritter Park">
+                <option value="River Run Family Waterpark">
+                <option value="Sertoma Park">
+                <option value="Silver Street Park">
+                <option value="Valley View Golf Park">
+                <option value="Bicentennial Park">
+                <option value="Riverfront Amphitheater">
+                <option value="Campbell Woodland Nature Trails">
+                <option value="Galena-Lamb Park">
+                <option value="Garry E. Cavan Park">
+                <option value="Greenville Park">
+                <option value="Herman Collier Park">
+                <option value="Letty Walter Park">
+                <option value="Kevin Hammersmith Memorial Park">
+                <option value="Sam Peden Community Park">
+                <option value="Southern IN Sports Center">
+                <option value="Falls of the Ohio State Park">
+                <option value="Deam Lake State Recreation Area">
+                <option value="Charlestown State Park">
+                <option value="Clark State Forest">
+                <option value="Harrison-Crawford State Forest">
+                <option value="O'Bannon Woods State Park">
+                <option value="Hayswood Nature Reserve">
+                <option value="Rhoads Pool">
+                <option value="South Harrison">
+                <option value="Buffalo Trace">
+                <option value="Noe's ">
+                <option value="Gresham">
+                <option value="Battle of Corydon">
+                <option value="The Hubbard House">
+                <option value="Morvin's Landing">
+                <option value="The Overlook Park">
+                <option value="Lebanon Junction Memorial Park">
+                <option value="Clear Creek Park">
+                <option value="Red Orchard Park">
+                <option value="Shelby Trails Park">
+                <option value="Finchville Park">
+                <option value="Shelbyville Skate Park">
+                <option value="Shelbyville Greeenway Trail">
+                <option value="Lake Shelby Park and Campground">
+                <option value="Battletown Park">
+                <option value="Brandenburg Riverfront Park">
+                <option value="Buttermilk Falls Trail">
+                <option value="Concordia Park">
+                <option value="Dianna's Park">
+                <option value="Flaherty Community Park">
+                <option value="Meade-Olin Park">
+                <option value="Otter Creek Recreation Area">
+                <option value="Wolf Creek Park">
+                <option value="YMCA Camp Piomingo">
+                <option value="Bernheim Arboretum and Research Forest">
+            </datalist>
+            <label>Search by Zip Code</label>
+            <input type="text" v-model="selectedZipCode"></input>
+        <div class="park">
 			<table>
 			<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>Visited</td></thead>
 			<div>
-			<tr v-for="park in parks" :key='park.id' v-show='park.visited != true'>
+			<tr v-for="park in parks" :key='park.id' v-show='park.zipCode === selectedZipCode'>
 				<td>{{ park.parkName }}</td>
 				<td>{{ park.address }}</td>
 				<td>{{ park.zipCode }}</td>
-				<td><input type="checkbox" onclick='save()' v-model='park.visited'></input></td>
+				<td><input type="checkbox" v-model='park.visited'></input></td>
           </tr>
 		  </table>
 		  </div>
