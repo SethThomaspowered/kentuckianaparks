@@ -308,24 +308,53 @@
                 <option value="YMCA Camp Piomingo">
                 <option value="Bernheim Arboretum and Research Forest">
             </datalist>
-            <label>Search by Zip Code</label>
+            <label>Search by City</label>
+            <input type="text" v-model="selectedCity"></input>
+        <div class="park">
+			<table>
+			<thead><td>Park</td><td>Street Address</td><td>City</td><td>Visited</td><td>Favorite</td></thead>
+			<div>
+			<tr v-for="park in parks" :key='park.id' v-show='park.city === selectedCity'>
+				<td>{{ park.parkName }}</td>
+				<td>{{ park.address }}</td>
+				<td>{{ park.city }}</td>
+				<td><input type="checkbox" v-model='park.visited'></input></td>
+                <td><input type="checkbox" v-model='park.favorite'></input></td>
+          </tr>
+		  </table>
+          <label>Search by County</label>
+            <input type="text" v-model="selectedCounty"></input>
+        <div class="park">
+			<table>
+			<thead><td>Park</td><td>Street Address</td><td>County</td><td>Visited</td><td>Favorite</td></thead>
+			<div>
+			<tr v-for="park in parks" :key='park.id' v-show='park.county === selectedCounty'>
+				<td>{{ park.parkName }}</td>
+				<td>{{ park.address }}</td>
+				<td>{{ park.county }}</td>
+				<td><input type="checkbox" v-model='park.visited'></input></td>
+                <td><input type="checkbox" v-model='park.favorite'></input></td>
+          </tr>
+		  </table>
+          <label>Search by Zip Code</label>
             <input type="text" v-model="selectedZipCode"></input>
         <div class="park">
 			<table>
-			<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>Visited</td></thead>
+			<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>Visited</td><td>Favorite</td></thead>
 			<div>
 			<tr v-for="park in parks" :key='park.id' v-show='park.zipCode === selectedZipCode'>
 				<td>{{ park.parkName }}</td>
 				<td>{{ park.address }}</td>
 				<td>{{ park.zipCode }}</td>
 				<td><input type="checkbox" v-model='park.visited'></input></td>
+                <td><input type="checkbox" v-model='park.favorite'></input></td>
           </tr>
 		  </table>
 		  </div>
-		  <p>Parks I have visited.</p>
+		  <p>Parks I want to visit.</p>
 		  <div class="park">
 			<table>
-			<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>Visited</td></thead>
+			<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>To Visit</td></thead>
 			<div>
 			<tr v-for="park in parks" :key='park.id' v-show='park.visited === true'>
 				<td>{{ park.parkName }}</td>
