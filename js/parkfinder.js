@@ -3,7 +3,9 @@ const app = new Vue ({
 	data() {
 		return {
 			selectedPark: "",
-            selectedZipCode: "40202",
+            selectedCity: "",
+            selectedCounty: "",
+            selectedZipCode: "",
             parks: [
 			{id: 1,	parkName: '35TH STREET', 	address: "814 SOUTH 35TH ST",	city: "Louisville", county: "Jefferson", zipCode: "40211", visited: false, favorite: false,},
             {id: 2,	parkName: "CRESCENT HILL",	address: "3110 BROWNSBORO RD",	city: "Louisville", county: "Jefferson", zipCode: "40206", visited: false, favorite: false,},
