@@ -2,7 +2,7 @@ const app = new Vue ({
 	el: '#app',
 	data() {
 		return {
-			selectedPark: "",
+			selectedPark: "CHEROKEE",
             selectedCity: "",
             selectedCounty: "",
             selectedZipCode: "",
