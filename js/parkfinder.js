@@ -294,8 +294,38 @@ const app = new Vue ({
             {id: 287,	parkName: "Otter Creek Recreation Area",	address: "", zipCode: "", visited: false, favorite: false,},		
             {id: 288,	parkName: "Wolf Creek Park",	address: "", zipCode: "", visited: false, favorite: false,},		
             {id: 289,	parkName: "YMCA Camp Piomingo",	address: "", zipCode: "", visited: false, favorite: false,}, 				
-            {id: 290,	parkName: "Bernheim Arboretum and Research Forest",	address: "2075 Clermont Rd", zipCode: "40110", visited: false, favorite: false,},
-			]
+            {id: 290,	parkName: "Bernheim Arboretum and Research Forest",	address: "2075 Clermont Rd", zipCode: "40110", visited: false, favorite: false,},	
+        ],
+        features: [
+            {id: 1, parkId: 1, parkName: "35TH STREET", features: "Playground",},
+            {id: 2, parkId: 2, parkName: "CRESCENT HILL", features: "Swimming",},
+            {id: 3, parkId: 1, parkName: "35th STREET", features: "Basketball",},
+            {id: 4, parkId: 2, parkName: "Crescent Hill", features: "Picnic",},
+            {id: 5, parkId: 2, parkName: "Crescent Hill", features: "Playground",},
+            {id: 6, parkId: 2, parkName: "Crescent Hill", features: "Golf",},
+            {id: 7, parkId: 2, parkName: "Crescent Hill", features: "Tennis",},
+            {id: 8, parkId: 2, parkName: "Crescent Hill", features: "Sprayground",},
+            {id: 9, parkId: 3, parkName: "Algonquin", features: "Sprayground",},
+            {id: 10, parkId: 101, parkName: "BAXTER SQUARE", features: "Sprayground",},
+            {id: 11, parkId: 126, parkName: "BEECHMONT TOT LOT", features: "Sprayground",},
+            {id: 12, parkId: 109, parkName: "BRESLIN", features: "Sprayground",},
+            {id: 13, parkId: 39, parkName: "CALIFORNIA LEISURE OPEN SPACE", features: "Sprayground",},
+            {id: 14, parkId: 86, parkName: "FARNSLEY", features: "Sprayground",},
+            {id: 15, parkId: 54, parkName: "G.G. MOORE", features: "Sprayground",},
+            {id: 16, parkId: 97, parkName: "IROQUOIS", features: "Sprayground",},
+            {id: 17, parkId: 41, parkName: "LAPORTE", features: "Sprayground",},
+            {id: 18, parkId: 102, parkName: "LONG RUN", features: "Sprayground",},
+            {id: 19, parkId: 25, parkName: "NELSON HORNBECK", features: "Sprayground",},
+            {id: 20, parkId: 117, parkName: "PETERSBURG", features: "Sprayground",},
+            {id: 21, parkId: 61, parkName: "RIVERVIEW", features: "Sprayground",},
+            {id: 22, parkId: 65, parkName: "SHELBY", features: "Sprayground",},
+            {id: 23, parkId: 120, parkName: "WYANDOTTE", features: "Sprayground",},
+            {id: 24, parkId: 6, parkName: "BINGHAM", features: "Spraypads",},
+            {id: 25, parkId: 45, parkName: "BOONE SQUARE", features: "Spraypads",},
+            {id: 26, parkId: 12, parkName: "CENTRAL", features: "Spraypads",},
+            {id: 27, parkId: 74, parkName: "CHEROKEE", features: "Spraypads",},
+
+        ]
 		}
 	}
 })
