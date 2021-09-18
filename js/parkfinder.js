@@ -296,7 +296,7 @@ const app = new Vue ({
             {id: 289,	parkName: "YMCA Camp Piomingo",	address: "", zipCode: "", visited: false, favorite: false,}, 				
             {id: 290,	parkName: "Bernheim Arboretum and Research Forest",	address: "2075 Clermont Rd", zipCode: "40110", visited: false, favorite: false,},	
         ],
-        features: [
+        highlights: [
             {id: 1, parkId: 1, parkName: "35TH STREET", features: "Playground",},
             {id: 2, parkId: 2, parkName: "CRESCENT HILL", features: "Swimming",},
             {id: 3, parkId: 1, parkName: "35th STREET", features: "Basketball",},
