@@ -71,7 +71,16 @@
           </tr>
 		  </table>
 		  </div>
-          
+          <div class="park">
+			<table>
+			<thead><td>Park</td><td>Features</td</thead>
+			<div>
+			<tr v-for="highlight in highlights" :key='highlight.id' v-show='highlight.parkId === 2'>
+				<td>{{ highlight.parkName }}</td>
+				<td>{{ highlight.features }}</td>
+          </tr>
+		  </table>
+        </div>
 	</div>
 
 </body>
