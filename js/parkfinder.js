@@ -1,7 +1,4 @@
-randomId=() => {
-    return Math.floor((Math.random() * 290) + 1);
-}
-randomId()
+
 const app = new Vue ({
 	el: '#app',
 	data() {
