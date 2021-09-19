@@ -75,7 +75,7 @@
 			<table>
 			<thead><td>Park</td><td>Features</td</thead>
 			<div>
-			<tr v-for="highlight in highlights" :key='highlight.id' v-show='highlight.parkId === 2'>
+			<tr v-for="highlight in highlights" :key='highlight.id' v-show='highlight.parkId === randomId'>
 				<td>{{ highlight.parkName }}</td>
 				<td>{{ highlight.features }}</td>
           </tr>
