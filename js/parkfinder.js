@@ -1,3 +1,4 @@
+
 const app = new Vue ({
 	el: '#app',
 	data() {
@@ -6,6 +7,7 @@ const app = new Vue ({
             selectedCity: "",
             selectedCounty: "",
             selectedZipCode: "",
+            randomId: Math.floor((Math.random() * 290) + 1),
             parks: [
 			{id: 1,	parkName: '35TH STREET', 	address: "814 SOUTH 35TH ST",	city: "Louisville", county: "Jefferson", zipCode: "40211", visited: false, favorite: false,},
             {id: 2,	parkName: "CRESCENT HILL",	address: "3110 BROWNSBORO RD",	city: "Louisville", county: "Jefferson", zipCode: "40206", visited: false, favorite: false,},
@@ -1365,14 +1367,9 @@ const app = new Vue ({
             {id: 1066, parkId: 290, parkName: "Bernheim Arboretum and Research Forest", features: "Education Center",},
             {id: 1067, parkId: 290, parkName: "Bernheim Arboretum and Research Forest", features: "Walking",},
             {id: 1068, parkId: 290, parkName: "Bernheim Arboretum and Research Forest", features: "Hiking",},
-            
-
             /*{id: 97, parkId: , parkName: "", features: "",},
             */
-            
-            
-
         ]
 		}
-	}
+	},  
 })
