@@ -71,11 +71,13 @@
           </tr>
 		  </table>
 		  </div>
+		  <label>Select a number between 1 and 290</label>
+		  <input prompt='Select a number between 1 and 290' v-model='randomId'></input>
           <div class="park">
 			<table>
 			<thead><td>Park</td><td>Features</td</thead>
 			<div>
-			<tr v-for="highlight in highlights" :key='highlight.id' v-show='highlight.parkId === randomId'>
+			<tr v-for="highlight in highlights" :key='highlight.id' v-show='highlight.parkId === Number(randomId)'>
 				<td>{{ highlight.parkName }}</td>
 				<td>{{ highlight.features }}</td>
           </tr>
