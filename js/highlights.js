@@ -485,9 +485,9 @@ const highlights = [
         {id: 484, parkId: 32, parkName: "KULMER RESERVE", features: "Walking",},
         {id: 485, parkId: 116, parkName: "LANNAN", features: "Walking",},
         {id: 486, parkId: 102, parkName: "LONG RUN", features: "Walking",},
-        {id: 487, parkId: 151, parkName: "MCNEELY LAKE", features: "Walking",},
-        {id: 488, parkId: 44, parkName: "NORFOLK ACRES", features: "Walking",},
-        {id: 489, parkId: 38, parkName: "PATRIOTS PEACE MEMORIAL", features: "Walking",},
+        {id: 487, parkId: 44, parkName: "MCNEELY LAKE", features: "Walking",},
+        {id: 488, parkId: 38, parkName: "NORFOLK ACRES", features: "Walking",},
+        {id: 489, parkId: 136, parkName: "PATRIOTS PEACE MEMORIAL", features: "Walking",},
         {id: 490, parkId: 79, parkName: "PORTLAND WHARF", features: "Walking",},
         {id: 491, parkId: 36, parkName: "ROBERSON RUN", features: "Walking",},
         {id: 492, parkId: 160, parkName: "ROBSION PARK", features: "Walking",},
@@ -1091,6 +1091,27 @@ const highlights = [
         {id: 1090, parkId: 134, parkName: "CYRILL ALLGEIER COMMUNITY CENTER", features: "Baseball",},
         {id: 1091, parkId: 136, parkName: "PATRIOTS PEACE MEMORIAL", features: "Memorial",},
         {id: 1092, parkId: 137, parkName: "BUECHEL PARCEL", features: "Natural Area",},
+        {id: 1093, parkId: 138, parkName: "MAHONEY", features: "future development",},
+        {id: 1094, parkId: 139, parkName: "PETERSON", features: "Natural Area",},
+        {id: 1095, parkId: 140, parkName: "JEFFERSON MEMORIAL PARCEL 22", features: "Natural Area",},
+        {id: 1096, parkId: 141, parkName: "SOUTHERN PARKWAY", features: "Olmsted",},
+        {id: 1097, parkId: 142, parkName: "EASTERN PARKWAY", features: "Olmsted",},
+        {id: 1098, parkId: 143, parkName: "NORTHWESTERN PARKWAY", features: "Olmsted",},
+        {id: 1099, parkId: 144, parkName: "SOUTHWESTERN PARKWAY", features: "Olmsted",},
+        {id: 1100, parkId: 145, parkName: "ALGONQUIN PARKWAY", features: "Olmsted",},
+        {id: 1101, parkId: 152, parkName: "GALVIN COURT", features: "Natural Area",},
+        {id: 1102, parkId: 162, parkName: "Jeffersontown Memorial Park", features: "Restroom",},
+        {id: 1103, parkId: 162, parkName: "Jeffersontown Memorial Park", features: "Picnic",},
+        {id: 1104, parkId: 162, parkName: "Jeffersontown Memorial Park", features: "Playground",},
+        {id: 1105, parkId: 162, parkName: "Jeffersontown Memorial Park", features: "Baseball",},
+        {id: 1106, parkId: 162, parkName: "Jeffersontown Memorial Park", features: "Basketball",},
+        {id: 1107, parkId: 162, parkName: "Jeffersontown Memorial Park", features: "Walking",},
+        {id: 1108, parkId: 162, parkName: "Jeffersontown Memorial Park", features: "Veteran Memorial",},
+        {id: 1109, parkId: 162, parkName: "Jeffersontown Memorial Park", features: "Helicopter",},
+        {id: 1110, parkId: 162, parkName: "Jeffersontown Memorial Park", features: "Tank",},
+
+
+
         
         
 ]
