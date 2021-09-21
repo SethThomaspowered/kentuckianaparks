@@ -1067,5 +1067,20 @@ const highlights = [
         {id: 1066, parkId: 290, parkName: "Bernheim Arboretum and Research Forest", features: "Education Center",},
         {id: 1067, parkId: 290, parkName: "Bernheim Arboretum and Research Forest", features: "Walking",},
         {id: 1068, parkId: 290, parkName: "Bernheim Arboretum and Research Forest", features: "Hiking",},
-
+        {id: 1069, parkId: 5, parkName: "BEN WASHER", features: "Picnic",},
+        {id: 1070, parkId: 5, parkName: "BEN WASHER", features: "Playground",},
+        {id: 1071, parkId: 14, parkName: "CLIFF", features: "Playground",},
+        {id: 1072, parkId: 35, parkName: "CHARLES YOUNG", features: "Playground",},
+        {id: 1073, parkId: 37, parkName: "IROQUOIS GOLF COURSE", features: "Golf",},
+        {id: 1074, parkId: 40, parkName: "SUN VALLEY GOLF COURSE", features: "Golf",},
+        {id: 1075, parkId: 49, parkName: "LONG RUN CEMETARY", features: "Cemetary",},
+        {id: 1076, parkId: 53, parkName: "MEMORIAL", features: "Bench",},
+        {id: 1077, parkId: 68, parkName: "TWIN PARK", features: "Open Space",},
+        {id: 1078, parkId: 71, parkName: "WAYSIDE", features: "Bench",},
+        {id: 1079, parkId: 85, parkName: "CRESCENT HILL GOLF COURSE", features: "Golf",},
+        {id: 1080, parkId: 92, parkName: "LONG RUN GOLF COURSE", features: "Golf",},
+        {id: 1081, parkId: 99, parkName: "CHEROKEE GOLF COURSE", features: "Golf",},
+        {id: 1075, parkId: 35, parkName: "CHARLES YOUNG", features: "Playground",},
+        
+        
 ]
