@@ -1080,7 +1080,17 @@ const highlights = [
         {id: 1079, parkId: 85, parkName: "CRESCENT HILL GOLF COURSE", features: "Golf",},
         {id: 1080, parkId: 92, parkName: "LONG RUN GOLF COURSE", features: "Golf",},
         {id: 1081, parkId: 99, parkName: "CHEROKEE GOLF COURSE", features: "Golf",},
-        {id: 1075, parkId: 35, parkName: "CHARLES YOUNG", features: "Playground",},
+        {id: 1082, parkId: 108, parkName: "BOBBY NICHOLS GOLF COURSe", features: "Golf",},
+        {id: 1083, parkId: 110, parkName: "CHURCHILL", features: "Playground",},
+        {id: 1084, parkId: 121, parkName: "EVA BANDMAN", features: "Cyclocross Course",},
+        {id: 1085, parkId: 127, parkName: "CASTLEWOOD OPEN SPACE", features: "Open Space",},
+        {id: 1086, parkId: 128, parkName: "CALIFORNIA OPEN SPACE", features: "Open Space",},
+        {id: 1087, parkId: 131, parkName: "ROSE FARM", features: "Bench",},
+        {id: 1088, parkId: 133, parkName: "CLIFTON HEIGHTS GREENWAY", features: "Walking",},
+        {id: 1089, parkId: 134, parkName: "CYRILL ALLGEIER COMMUNITY CENTER", features: "Community Center",},
+        {id: 1090, parkId: 134, parkName: "CYRILL ALLGEIER COMMUNITY CENTER", features: "Baseball",},
+        {id: 1091, parkId: 136, parkName: "PATRIOTS PEACE MEMORIAL", features: "Memorial",},
+        {id: 1092, parkId: 137, parkName: "BUECHEL PARCEL", features: "Natural Area",},
         
         
 ]
