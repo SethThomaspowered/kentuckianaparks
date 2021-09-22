@@ -17,3 +17,6 @@ td {
   text-align: center;
   margin-right: 0px;
 }
+tr:nth-child(even) {
+    background-color: chartreuse;
+}
