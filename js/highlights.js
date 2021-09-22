@@ -1109,6 +1109,26 @@ const highlights = [
         {id: 1108, parkId: 162, parkName: "Jeffersontown Memorial Park", features: "Veteran Memorial",},
         {id: 1109, parkId: 162, parkName: "Jeffersontown Memorial Park", features: "Helicopter",},
         {id: 1110, parkId: 162, parkName: "Jeffersontown Memorial Park", features: "Tank",},
+        {id: 1111, parkId: 163, parkName: "David L Armstrong Recreation Center", features: "Restroom",},
+        {id: 1112, parkId: 163, parkName: "David L Armstrong Recreation Center", features: "Basketball",},
+        {id: 1113, parkId: 164, parkName: "Skyview", features: "Baseball",},
+        {id: 1114, parkId: 164, parkName: "Skyview", features: "Spraypad",},
+        {id: 1115, parkId: 164, parkName: "Skyview", features: "Walking",},
+        {id: 1116, parkId: 164, parkName: "Skyview", features: "Running",},
+        {id: 1117, parkId: 164, parkName: "Skyview", features: "Restroom",},
+        {id: 1118, parkId: 164, parkName: "Skyview", features: "Football",},
+        {id: 1119, parkId: 165, parkName: "Plainview Swim Center", features: "Swimming",},
+        {id: 1120, parkId: 165, parkName: "Plainview Swim Center", features: "Restrooms",},
+        {id: 1121, parkId: 166, parkName: "Waterfront", features: "Running",},
+        {id: 1122, parkId: 166, parkName: "Waterfront", features: "Walking",},
+        {id: 1123, parkId: 166, parkName: "Waterfront", features: "Playground",},
+        {id: 1124, parkId: 166, parkName: "Waterfront", features: "Sculpture",},
+        {id: 1125, parkId: 166, parkName: "Waterfront", features: "Multifield",},
+        {id: 1126, parkId: 166, parkName: "Waterfront", features: "Picnic",},
+        {id: 1127, parkId: 166, parkName: "Waterfront", features: "Canoeing",},
+        {id: 1128, parkId: 166, parkName: "Waterfront", features: "Concert Venue",},
+        {id: 1129, parkId: 207, parkName: "Meadows Park", features: "Natural Area",},
+        
 
 
 
