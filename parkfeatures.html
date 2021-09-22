@@ -7,7 +7,10 @@
     <title>Park Details | Kentuckiana Parks</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
-    <script src="./js/parkfinder.js" defer></script>
+    <script src="js/parks.js" defer></script>
+    <script src="js/highlights.js" defer></script>
+    <script src="js/parkfinder.js" defer></script>
+    
     
 </head>
 <body>
@@ -18,7 +21,7 @@
 			<table>
 			<thead><td>Park</td><td>Features</td</thead>
 			<div>
-			<tr v-for="highlight in highlights" :key='highlight.id' v-show='highlight.parkId === 2'>
+			<tr v-for="highlight in highlights" :key='highlight.id' v-show='highlight.parkId === randomId'>
 				<td>{{ highlight.parkName }}</td>
 				<td>{{ highlight.features }}</td>
           </tr>
