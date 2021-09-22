@@ -60,16 +60,29 @@
           </tr>
 		  </table>
 		  </div>
-		  <p>Parks I want to visit.</p>
-		  <div class="park">
-			<table>
-			<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>To Visit</td></thead>
-			<div>
-			<tr v-for="park in parks" :key='park.id' v-show='park.visited === true'>
+		  
+		 	 <p>Parks I want to visit.</p>
+		  	<div class="park">
+				<table>
+					<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>To Visit</td></thead>
+					<tr v-for="park in parks" :key='park.id' v-show='park.visited === true'>
+						<td>{{ park.parkName }}</td>
+						<td>{{ park.address }}</td>
+						<td>{{ park.zipCode }}</td>
+						<td><input type="checkbox" v-model='park.visited'></input></td>
+          			</tr>
+		  		</table>
+		  	</div>
+		  	<div class="park">
+				<p>My Favorite Parks</p>
+				<table>
+				<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>Favorite</td></thead>
+				<div>
+			<tr v-for="park in parks" :key='park.id' v-show='park.favorite === true'>
 				<td>{{ park.parkName }}</td>
 				<td>{{ park.address }}</td>
 				<td>{{ park.zipCode }}</td>
-				<td><input type="checkbox" v-model='park.visited'></input></td>
+				<td><input type="checkbox" v-model='park.favorite'></input></td>
           </tr>
 		  </table>
 		  </div>
