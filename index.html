@@ -33,10 +33,9 @@
 		  </table>
           <label>Search by County</label>
             <input type="text" v-model="selectedCounty"></input>
-        <div class="park">
+        <div class="park" id="county">
 			<table>
 			<thead><td>Park</td><td>Street Address</td><td>County</td><td>Visited</td><td>Favorite</td></thead>
-			<div>
 			<tr v-for="park in parks" :key='park.id' v-show='park.county === selectedCounty'>
 				<td>{{ park.parkName }}</td>
 				<td>{{ park.address }}</td>
@@ -45,9 +44,10 @@
                 <td><input type="checkbox" v-model='park.favorite'></input></td>
           </tr>
 		  </table>
-          <label>Search by Zip Code</label>
+        </div>
+		<label>Search by Zip Code</label>
             <input type="text" v-model="selectedZipCode"></input>
-        <div class="park">
+        <div class="park" id="zipcode">
 			<table>
 			<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>Visited</td><td>Favorite</td></thead>
 			<div>
