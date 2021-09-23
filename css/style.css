@@ -13,7 +13,7 @@ h1 {
 td {
 	border: 1px solid black;
   display: flexbox;
-  width: 25%;
+  width: 20%;
   text-align: center;
   margin-right: 0px;
 }
