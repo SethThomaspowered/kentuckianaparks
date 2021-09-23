@@ -16,7 +16,22 @@
     <p>We hope to be your first stop when it comes to Louisville area parks.</p>
     <div id='app'>
 		<h1>Kentuckiana Parks</h1>
-       
+		<div class="SearchRadioButtons">
+            <input id="ZipCodeCheck" class='styled' checked="checked"
+            name="searchParam" onchange="checkboxChanged(this)" type="radio" value="ZipCode">
+            <label for="ZipCodeCheck">Zip Code</label>
+
+            <input id="CityCheck" class="styled" name="SearchParam" 
+            onchange="checkboxChanged(this)" type="radio" value="City">
+            <label for="CityCheck">City</label>
+
+            <input id="CountyCheck" class="styled" name="SearchParam" 
+            onchange="checkboxChanged(this)" type="radio" value="County">
+            <label for="CountyCheck">County</label>
+
+            <input id='searchInputBox' name='searchInputBox'>
+            <button onclick="remoteSearchJS(event)">Search</button>
+        </div>
             <label>Search by City</label>
             <input type="text" v-model="selectedCity"></input>
         <div class="park">
