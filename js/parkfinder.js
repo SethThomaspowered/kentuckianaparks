@@ -10,5 +10,6 @@ const app = new Vue ({
             randomId: Math.floor((Math.random() * 290) + 1),
             parks: parks,
         }
-	},  
+	},
+     
 })
