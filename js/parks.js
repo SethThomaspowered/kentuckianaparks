@@ -94,7 +94,7 @@ const parks = [
             {id: 95, parkName: "WAVERLY",	 address: "4800 WAVERLY PARK RD", city: "Louisville", county: "Jefferson", zipCode: "40214", visited: false, favorite: false,},
             {id: 96, parkName: "CHARLIE VETTINER",	address: "5550 CHARLIE VETTINER PARK RD", city: "Louisville", county: "Jefferson", zipCode: "40299", visited: false, favorite: false,},
             {id: 97, parkName: "IROQUOIS",	address: "2120 RUNDILL RD", city: "Louisville", county: "Jefferson", zipCode: "40214", visited: false, favorite: false,},
-            {id: 98, parkname: "SENECA",	address: "3151 PEE WEE REESE RD",	city: "Louisville", county: "Jefferson", zipCode: "40205", visited: false, favorite: false,},
+            {id: 98, parkName: "SENECA",	address: "3151 PEE WEE REESE RD",	city: "Louisville", county: "Jefferson", zipCode: "40205", visited: false, favorite: false,},
             {id: 99, parkName: "CHEROKEE GOLF COURSE",	address: "2501 ALEXANDER RD",	city: "Louisville", county: "Jefferson", zipCode: "40204", visited: false, favorite: false,},
             {id: 100,	parkName: "THURMAN HUTCHINS",	address: "3734 RIVER RD",	city: "Louisville", county: "Jefferson", zipCode: "40207", visited: false, favorite: false,},
             {id: 101,	parkName: "BAXTER SQUARE",	address: "301 SOUTH 12TH ST",	city: "Louisville", county: "Jefferson", zipCode: "40203", visited: false, favorite: false,},
