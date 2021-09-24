@@ -16,7 +16,18 @@ td {
   width: 20%;
   text-align: center;
   margin-right: 0px;
+  font-size: x-small;
 }
 tr:nth-child(even) {
     background-color: chartreuse;
+}
+@media screen and (min-width: 600px){
+    td {
+        font-size: small;
+    }    
+}
+@media screen  and (min-width: 992px){
+    td {
+        font-size: medium;
+    }
 }
