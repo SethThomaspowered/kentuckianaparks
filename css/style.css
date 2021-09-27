@@ -21,6 +21,9 @@ td {
 tr:nth-child(even) {
     background-color: chartreuse;
 }
+.row {
+    display: flex;
+}
 @media screen and (min-width: 600px){
     td {
         font-size: small;
