@@ -16,6 +16,7 @@
     <p>We hope to be your first stop when it comes to Louisville area parks.</p>
     <div id='app'>
 		<h1>Kentuckiana Parks</h1>
+		
 		<aside>
 			<img src="cherokee 052.JPG" alt="Cherokee Park">
 		</aside>
@@ -79,9 +80,11 @@
           </tr>
 		  </table>
 		  </div>
-		  
-		 	 <p>Parks I want to visit.</p>
-		  	<div class="park">
+		<section>  
+		 	<div class='row'>
+			<div class="col">
+				<p>Parks I want to visit.</p>
+		  	
 				<table>
 					<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>To Visit</td></thead>
 					<tr v-for="park in parks" :key='park.id' v-show='park.visited === true'>
@@ -92,7 +95,7 @@
           			</tr>
 		  		</table>
 		  	</div>
-		  	<div class="park">
+		  	<div class="col">
 				<p>My Favorite Parks</p>
 				<table>
 				<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>Favorite</td></thead>
@@ -105,6 +108,8 @@
           </tr>
 		  </table>
 		  </div>
+		</div>
+		</section>
 		  <label>Select a number between 1 and 290</label>
 		  <input prompt='Select a number between 1 and 290' v-model='randomId'></input>
           <div class="park">
