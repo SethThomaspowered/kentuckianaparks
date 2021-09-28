@@ -23,11 +23,17 @@ tr:nth-child(even) {
 }
 .row {
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
 }
 @media screen and (min-width: 600px){
     td {
         font-size: small;
     }    
+    .row {
+        flex-direction: row;
+    }
 }
 @media screen  and (min-width: 992px){
     td {
