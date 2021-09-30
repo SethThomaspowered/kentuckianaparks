@@ -27,6 +27,12 @@ tr:nth-child(even) {
     justify-content: space-around;
     text-align: center;
 }
+.d-none {
+    display: none;
+}
+#zipcode {
+    display: none;
+}
 @media screen and (min-width: 600px){
     td {
         font-size: small;
