@@ -8,7 +8,7 @@
     <script src="./js/parks.js" defer></script>
 	<script src="./js/highlights.js" defer></script>
 	<script src="./js/parkfinder.js" defer></script>
-	
+	<script src="js/test.js" defer></script>
     <title>Kentuckiana Parks</title>
 </head>
 <body>
@@ -37,12 +37,11 @@
 			v-if='(SearchParam === "City")' v-model='selectedCity'>
             <button onclick="remoteSearchJS(event)">Search</button>
         </div>
-            <label>Search by City</label>
+        <div class="park d-none" id='city'>   
+			<label>Search by City</label>
             <input type="text" v-model="selectedCity"></input>
-        <div class="park">
 			<table>
 			<thead><td>Park</td><td>Street Address</td><td>City</td><td>Visited</td><td>Favorite</td></thead>
-			<div>
 			<tr v-for="park in parks" :key='park.id' v-show='park.city === selectedCity'>
 				<td>{{ park.parkName }}</td>
 				<td>{{ park.address }}</td>
@@ -51,9 +50,11 @@
                 <td><input type="checkbox" v-model='park.favorite'></input></td>
           </tr>
 		  </table>
-          <label>Search by County</label>
+		</div> 
+        <div class="park d-none" id="county">
+			<label>Search by County</label>
             <input type="text" v-model="selectedCounty"></input>
-        <div class="park" id="county">
+        
 			<table>
 			<thead><td>Park</td><td>Street Address</td><td>County</td><td>Visited</td><td>Favorite</td></thead>
 			<tr v-for="park in parks" :key='park.id' v-show='park.county === selectedCounty'>
@@ -65,7 +66,7 @@
           </tr>
 		  </table>
         </div>
-		<div class="park" id="zipcode">
+		<div class="park d-none" id="zipcode">
 			<label>Search by Zip Code</label>
             <input type="text" v-model="selectedZipCode"></input>
         
