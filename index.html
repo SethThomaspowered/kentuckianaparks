@@ -38,7 +38,7 @@
             <button onclick="remoteSearchJS(event)">Search</button>
         </div>
         <div class="park d-none" id='city'>   
-			<label>Search by City</label>
+			
             <input type="text" v-model="selectedCity"></input>
 			<table>
 			<thead><td>Park</td><td>Street Address</td><td>City</td><td>Visited</td><td>Favorite</td></thead>
@@ -52,7 +52,7 @@
 		  </table>
 		</div> 
         <div class="park d-none" id="county">
-			<label>Search by County</label>
+			
             <input type="text" v-model="selectedCounty"></input>
         
 			<table>
@@ -67,12 +67,12 @@
 		  </table>
         </div>
 		<div class="park d-none" id="zipcode">
-			<label>Search by Zip Code</label>
+			
             <input type="text" v-model="selectedZipCode"></input>
         
 			<table>
 			<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>Visited</td><td>Favorite</td></thead>
-			<div>
+			
 			<tr v-for="park in parks" :key='park.id' v-show='park.zipCode === selectedZipCode'>
 				<td>{{ park.parkName }}</td>
 				<td>{{ park.address }}</td>
@@ -81,7 +81,7 @@
                 <td><input type="checkbox" v-model='park.favorite'></input></td>
           </tr>
 		  </table>
-		  </div>
+		  
 		</div>
 		<section>  
 		 	<div class='row'>
