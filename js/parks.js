@@ -282,7 +282,7 @@ const parks = [
             {id: 283,	parkName: "Concordia Park",	address: " ", city: 'Concordia', county: 'Meade', zipCode: "40157", visited: false, favorite: false,},
             {id: 284,	parkName: "Dianna's Park",	address: "515 Broadway", city: "Brandenburg", county: "Meade",	zipCode: "40108", visited: false, favorite: false,},
             {id: 285,	parkName: "Flaherty Community Park",	address: "", zipCode: "40175", visited: false, favorite: false,},
-            {id: 286,	parkName: "Meade-Olin Park",	address: "163 Moremen Rd",	zipCode: "40108", visited: false, favorite: false,},
+            {id: 286,	parkName: "Meade-Olin Park",	address: "163 Moremen Rd", county: 'Meade',	zipCode: "40108", visited: false, favorite: false,},
             {id: 287,	parkName: "Otter Creek Recreation Area",	address: "850 Otter Creek Park Rd", city: "Brandenburg", county: "Meade", zipCode: "40108", visited: false, favorite: false,},		
             //{id: 288,	parkName: "Wolf Creek Park",	address: "", zipCode: "", visited: false, favorite: false,},		
             {id: 289,	parkName: "YMCA Camp Piomingo",	address: "1950 Otter Creek Park Rd", city: "Brandenburg", county: "Meade", zipCode: "40108", visited: false, favorite: false,}, 				
