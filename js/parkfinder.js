@@ -3,8 +3,8 @@ const app = new Vue ({
 	data() {
 		return {
 			selectedPark: "CHEROKEE",
-            selectedCity: "",
-            selectedCounty: "",
+            selectedCity: "".toLowerCase(),
+            selectedCounty: "".toLowerCase(),
             selectedZipCode: "",
             highlights: highlights,
             randomId: Math.floor((Math.random() * 290) + 1),

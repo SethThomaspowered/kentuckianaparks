@@ -1,5 +1,5 @@
 const parks = [
-    {id: 1,	parkName: '35TH STREET', 	address: "814 SOUTH 35TH ST",	city: "Louisville", county: "Jefferson", zipCode: "40211", visited: false, favorite: false,},
+    {id: 1,	parkName: '35TH STREET', 	address: "814 SOUTH 35TH ST",	city: "Louisville".toLowerCase(), county: "Jefferson".toLowerCase(), zipCode: "40211", visited: false, favorite: false,},
             {id: 2,	parkName: "CRESCENT HILL",	address: "3110 BROWNSBORO RD",	city: "Louisville", county: "Jefferson", zipCode: "40206", visited: false, favorite: false,},
             {id: 3, parkName: "ALGONQUIN",	address: "1614 CYPRESS ST",	city: "Louisville", county: "Jefferson", zipCode: "40210", visited: false, favorite: false,},
             {id: 4, parkName: "BELLEVUE",	address: "4711 BELLEVUE AVE",	city: "Louisville", county: "Jefferson", zipCode: "40215", visited: false, favorite: false,},
