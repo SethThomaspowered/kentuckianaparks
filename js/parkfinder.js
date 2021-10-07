@@ -9,7 +9,7 @@ const app = new Vue ({
             highlights: highlights,
             randomId: Math.floor((Math.random() * 290) + 1),
             parks: parks,
-            SearchParam: '',
+            searchParam: '',
         }
 	},
      
