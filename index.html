@@ -62,12 +62,12 @@
         </div>
 		<div class="park d-none" id="zipcode">
 			
-            <input type="text" v-model="selectedZipCode"></input>
+            
         
 			<table>
 			<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>Visited</td><td>Favorite</td></thead>
 			
-			<tr v-for="park in parks" :key='park.id' v-show='park.zipCode === selectedZipCode'>
+			<tr v-for="park in parks" :key='park.id' v-show='park.zipCode === searchParam'>
 				<td>{{ park.parkName }}</td>
 				<td>{{ park.address }}</td>
 				<td>{{ park.zipCode }}</td>
