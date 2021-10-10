@@ -8,35 +8,24 @@
     <script src="./js/parks.js" defer></script>
 	<script src="./js/highlights.js" defer></script>
 	<script src="./js/parkfinder.js" defer></script>
-	<script src="js/test.js" defer></script>
+	<script src="./js/test.js" defer></script>
     <title>Kentuckiana Parks</title>
 </head>
 <body>
     <h1>Welcome to Kentuckiana Parks and Recreation</h1>
     <p>We hope to be your first stop when it comes to Louisville area parks.</p>
     <div id='app'>
-		<h1>Kentuckiana Parks</h1>
+		<h2>Kentuckiana Parks</h2>
 		<div class="SearchRadioButtons">
-            <input id="ZipCodeCheck" class='styled' checked="checked"
-            name="SearchParam" onchange="checkboxChanged(this)" type="radio" value="SearchParam">
-            <label for="ZipCodeCheck">Zip Code</label>
-
-            <input id="CityCheck" class="styled" name="SearchParam" 
-            onchange="checkboxChanged(this)" type="radio" value="SearchParam">
-            <label for="CityCheck">City</label>
-
-            <input id="CountyCheck" class="styled" name="SearchParam" 
-            onchange="checkboxChanged(this)" type="radio" value="SearchParam">
-            <label for="CountyCheck">County</label>
+            <label> Search for parks by:<br> City, County, or Zip Code
 			<input type="text" id='search-bar' autocomplete='off' v-model='searchParam'></input>
-
+			<button type="submit" id="submit">Discover Parks</button></label>
         </div>
-        <div class="park d-none" id='city'>   
+        <div class="park" id='city'>   
 			
-            <input type="text" v-model="selectedCity"></input>
 			<table>
 			<thead><td>Park</td><td>Street Address</td><td>City</td><td>Visited</td><td>Favorite</td></thead>
-			<tr v-for="park in parks" :key='park.id' v-show='selectedCity.toLowerCase() === park.city'>
+			<tr v-for="park in parks" :key='park.id' v-show='searchParam.toLowerCase() === park.city'>
 				<td>{{ park.parkName }}</td>
 				<td>{{ park.address }}</td>
 				<td>{{ park.city }}</td>
@@ -45,13 +34,10 @@
           </tr>
 		  </table>
 		</div> 
-        <div class="park d-none" id="county">
-			
-            <input type="text" v-model="selectedCounty"></input>
-        
+        <div class="park" id="county">
 			<table>
 			<thead><td>Park</td><td>Street Address</td><td>County</td><td>Visited</td><td>Favorite</td></thead>
-			<tr v-for="park in parks" :key='park.id' v-show='park.county === selectedCounty.toLowerCase()'>
+			<tr v-for="park in parks" :key='park.id' v-show='park.county === searchParam.toLowerCase()'>
 				<td>{{ park.parkName }}</td>
 				<td>{{ park.address }}</td>
 				<td>{{ park.county }}</td>
