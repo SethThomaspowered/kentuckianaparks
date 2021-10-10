@@ -1,21 +1,20 @@
 //Trying to create search options by clicking on radio buttons.
-const zipCodeCheck = document.getElementById('ZipCodeCheck'),
-    cityCheck = document.getElementById('CityCheck'),
-    countyCheck = document.getElementById('CountyCheck'),
+const zipCodeCheck = document.getElementById('submit'),
     zip = document.getElementById('zipcode'),
     county = document.getElementById('county'),
     city = document.getElementById('city');
 
 
 zipCodeCheck.addEventListener('click', function(){
-    if (zipCodeCheck) {
+    if (app.searchParam) {
+        console.log(app.searchParam)
         if (zip.classList.contains('d-none')) {
             zip.classList.remove('d-none');
         }
         else {
             zip.classList.add('d-none');
         }}})
-countyCheck.addEventListener('click', function(){    
+/*countyCheck.addEventListener('click', function(){    
     if (countyCheck) {
         if (county.classList.contains('d-none')) {
             county.classList.remove('d-none');
@@ -31,4 +30,4 @@ cityCheck.addEventListener('click', function(){
         else {
             city.classList.add('d-none');
 }}
-})
+})*/
