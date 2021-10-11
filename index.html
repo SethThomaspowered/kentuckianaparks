@@ -25,7 +25,7 @@
 			
 			<table>
 			<thead><td>Park</td><td>Street Address</td><td>City</td><td>Visited</td><td>Favorite</td></thead>
-			<tr v-for="park in parks" :key='park.id' v-show='searchParam.toLowerCase() === park.city'>
+			<tr v-for="park in parks" :key='park.id' v-if='searchParam.toLowerCase() === park.city'>
 				<td>{{ park.parkName }}</td>
 				<td>{{ park.address }}</td>
 				<td>{{ park.city }}</td>
@@ -34,10 +34,10 @@
           </tr>
 		  </table>
 		</div> 
-        <div class="park d-none" id="county">
+        <div class="park" id="county">
 			<table>
 			<thead><td>Park</td><td>Street Address</td><td>County</td><td>Visited</td><td>Favorite</td></thead>
-			<tr v-for="park in parks" :key='park.id' v-show='park.county === searchParam.toLowerCase()'>
+			<tr v-for="park in parks" :key='park.id' v-if='park.county === searchParam.toLowerCase()'>
 				<td>{{ park.parkName }}</td>
 				<td>{{ park.address }}</td>
 				<td>{{ park.county }}</td>
@@ -46,14 +46,14 @@
           </tr>
 		  </table>
         </div>
-		<div class="park d-none" id="zipcode">
+		<div class="park" id="zipcode">
 			
             
         
 			<table>
 			<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>Visited</td><td>Favorite</td></thead>
 			
-			<tr v-for="park in parks" :key='park.id' v-show='park.zipCode === searchParam'>
+			<tr v-for="park in parks" :key='park.id' v-if='park.zipCode === searchParam'>
 				<td>{{ park.parkName }}</td>
 				<td>{{ park.address }}</td>
 				<td>{{ park.zipCode }}</td>
@@ -70,7 +70,7 @@
 		  	
 				<table>
 					<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>To Visit</td></thead>
-					<tr v-for="park in parks" :key='park.id' v-show='park.visited === true'>
+					<tr v-for="park in parks" :key='park.id' v-if='park.visited === true'>
 						<td>{{ park.parkName }}</td>
 						<td>{{ park.address }}</td>
 						<td>{{ park.zipCode }}</td>
@@ -83,7 +83,7 @@
 				<table>
 				<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>Favorite</td></thead>
 				<div>
-			<tr v-for="park in parks" :key='park.id' v-show='park.favorite === true'>
+			<tr v-for="park in parks" :key='park.id' v-if='park.favorite === true'>
 				<td>{{ park.parkName }}</td>
 				<td>{{ park.address }}</td>
 				<td>{{ park.zipCode }}</td>
@@ -99,7 +99,7 @@
 			<table>
 			<thead><td>Park</td><td>Features</td</thead>
 
-			<tr v-for="highlight in highlights" :key='highlight.id' v-show='highlight.features === search'>
+			<tr v-for="highlight in highlights" :key='highlight.id' v-if='search == highlight.features'>
 				<td>{{ highlight.parkName }}</td>
 				<td>{{ highlight.features }}</td>
           	</tr>

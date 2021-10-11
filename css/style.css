@@ -10,14 +10,15 @@ body {
 h1 {
     background-color: rgb(165, 42, 42);
 }
+
 td {
 	border: 1px solid black;
-  display: flexbox;
-  width: 20%;
-  text-align: center;
-  text-transform: capitalize;
-  margin-right: 0px;
-  font-size: x-small;
+    display:flexbox;
+    width: 20%;
+    text-align: center;
+    text-transform: capitalize;
+    margin-right: 0px;
+    font-size: x-small;
 }
 tr:nth-child(even) {
     background-color: chartreuse;
