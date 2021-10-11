@@ -33,10 +33,10 @@
         </div>
         <div class="park d-none" id='city'>   
 			
-            <input type="text" v-model="selectedCity"></input>
+            
 			<table>
 			<thead><td>Park</td><td>Street Address</td><td>City</td><td>Visited</td><td>Favorite</td></thead>
-			<tr v-for="park in parks" :key='park.id' v-show='selectedCity.toLowerCase() === park.city'>
+			<tr v-for="park in parks" :key='park.id' v-show='searchParam.toLowerCase() === park.city'>
 				<td>{{ park.parkName }}</td>
 				<td>{{ park.address }}</td>
 				<td>{{ park.city }}</td>
@@ -47,11 +47,11 @@
 		</div> 
         <div class="park d-none" id="county">
 			
-            <input type="text" v-model="selectedCounty"></input>
+            
         
 			<table>
 			<thead><td>Park</td><td>Street Address</td><td>County</td><td>Visited</td><td>Favorite</td></thead>
-			<tr v-for="park in parks" :key='park.id' v-show='park.county === selectedCounty.toLowerCase()'>
+			<tr v-for="park in parks" :key='park.id' v-show='park.county === searchParam.toLowerCase()'>
 				<td>{{ park.parkName }}</td>
 				<td>{{ park.address }}</td>
 				<td>{{ park.county }}</td>
@@ -108,16 +108,16 @@
 		</div>
 		</section>
 		  <label>Select a number between 1 and 290</label>
-		  <input prompt='Select a number between 1 and 290' v-model='randomId'></input>
-          <div class="park">
+		  <input prompt='Search by park feature' v-model='search'></input>
+        <div class="park">
 			<table>
 			<thead><td>Park</td><td>Features</td</thead>
-			<div>
-			<tr v-for="highlight in highlights" :key='highlight.id' v-show='highlight.parkId === Number(randomId)'>
+
+			<tr v-for="highlight in highlights" :key='highlight.id' v-show='highlight.features === search'>
 				<td>{{ highlight.parkName }}</td>
 				<td>{{ highlight.features }}</td>
-          </tr>
-		  </table>
+          	</tr>
+		  	</table>
         </div>
 	</div>
 
