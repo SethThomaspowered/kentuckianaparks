@@ -23,9 +23,6 @@
         </div>
         <div class="park" id='city'>   
 			
-<<<<<<< HEAD     
-=======
->>>>>>> f2cfa2920c6623bf94fe0cf797c45eae1ddeec28
 			<table>
 			<thead><td>Park</td><td>Street Address</td><td>City</td><td>Visited</td><td>Favorite</td></thead>
 			<tr v-for="park in parks" :key='park.id' v-show='searchParam.toLowerCase() === park.city'>
@@ -37,11 +34,7 @@
           </tr>
 		  </table>
 		</div> 
-<<<<<<< HEAD
         <div class="park d-none" id="county">
-=======
-        <div class="park d-none" id="county">
->>>>>>> f2cfa2920c6623bf94fe0cf797c45eae1ddeec28
 			<table>
 			<thead><td>Park</td><td>Street Address</td><td>County</td><td>Visited</td><td>Favorite</td></thead>
 			<tr v-for="park in parks" :key='park.id' v-show='park.county === searchParam.toLowerCase()'>
@@ -100,7 +93,7 @@
 		  </div>
 		</div>
 		</section>
-		  <label>Select a number between 1 and 290</label>
+		  <label>Search by park feature</label>
 		  <input prompt='Search by park feature' v-model='search'></input>
         <div class="park">
 			<table>
