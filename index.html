@@ -28,35 +28,21 @@
 			<tr v-for="park in parks" :key='park.id' v-if='searchParam.toLowerCase() === park.city'>
 				<td>{{ park.parkName }}</td>
 				<td>{{ park.address }}</td>
-				<td>{{ park.city }}</td>
+				<td>{{ park.city }}, {{ park.county }}, {{ park.zipCode }}</td>
 				<td><input type="checkbox" v-model='park.visited'></input></td>
                 <td><input type="checkbox" v-model='park.favorite'></input></td>
-          </tr>
-		  </table>
-		</div> 
-        <div class="park" id="county">
-			<table>
-			<thead><td>Park</td><td>Street Address</td><td>County</td><td>Visited</td><td>Favorite</td></thead>
+			</tr>
 			<tr v-for="park in parks" :key='park.id' v-if='park.county === searchParam.toLowerCase()'>
 				<td>{{ park.parkName }}</td>
 				<td>{{ park.address }}</td>
-				<td>{{ park.county }}</td>
+				<td>{{ park.city }}, {{ park.county }}, {{ park.zipCode }}</td>
 				<td><input type="checkbox" v-model='park.visited'></input></td>
                 <td><input type="checkbox" v-model='park.favorite'></input></td>
-          </tr>
-		  </table>
-        </div>
-		<div class="park" id="zipcode">
-			
-            
-        
-			<table>
-			<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>Visited</td><td>Favorite</td></thead>
-			
+          	</tr>
 			<tr v-for="park in parks" :key='park.id' v-if='park.zipCode === searchParam'>
 				<td>{{ park.parkName }}</td>
 				<td>{{ park.address }}</td>
-				<td>{{ park.zipCode }}</td>
+				<td>{{ park.city }}, {{ park.county }}, {{ park.zipCode }}</td>
 				<td><input type="checkbox" v-model='park.visited'></input></td>
                 <td><input type="checkbox" v-model='park.favorite'></input></td>
           </tr>
