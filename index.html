@@ -16,10 +16,10 @@
     <p>We hope to be your first stop when it comes to Louisville area parks.</p>
     <div id='app'>
 		<h2>Kentuckiana Parks</h2>
-		<div class="SearchRadioButtons">
-            <label> Search for parks by:<br> City, County, or Zip Code
-			<input type="text" id='search-bar' autocomplete='off' v-model='searchParam'></input>
-			<button type="submit" id="submit">Discover Parks</button></label>
+		<div class="SearchRadioButtons row">
+            <label> Search for parks by:<br> City, County, or Zip Code<br>
+			<input type="search" id='search-bar' autocomplete='off' v-model='searchParam'></input>
+			</label>
         </div>
         <div class="park" id='city'>   
 			
@@ -79,9 +79,10 @@
 		  </div>
 		</div>
 		</section>
-		  <label>Search by park feature</label>
-		  <input prompt='Search by park feature' v-model='search'></input>
-        <div class="park">
+		<div class="park row">  
+		<label>Search by park feature: </label>
+		  <input type='search' autocomplete='off' prompt='Search by park feature' v-model='search'></input>
+        
 			<table>
 			<thead><td>Park</td><td>Features</td</thead>
 
@@ -92,6 +93,9 @@
 		  	</table>
         </div>
 	</div>
-
+	<footer>
+		<h2></h2>
+		<p>Thank you for visiting our page.</p>
+	</footer>
 </body>
 </html>
