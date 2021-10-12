@@ -86,7 +86,7 @@
 			<table>
 			<thead><td>Park</td><td>Features</td</thead>
 
-			<tr v-for="highlight in highlights" :key='highlight.id' v-if='search == highlight.features'>
+			<tr v-for="highlight in highlights" :key='highlight.id' v-if='search.toLowerCase() == highlight.features'>
 				<td>{{ highlight.parkName }}</td>
 				<td>{{ highlight.features }}</td>
           	</tr>
