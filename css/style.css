@@ -7,7 +7,7 @@ body {
     background-color: rgba(24, 128, 24, 0.5);
 
 }
-h1 {
+h1, footer {
     background-color: rgb(165, 42, 42);
 }
 
