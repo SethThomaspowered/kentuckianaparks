@@ -286,5 +286,9 @@ const parks = [
             {id: 287,	parkName: "Otter Creek Recreation Area",	address: "850 Otter Creek Park Rd", city: "brandenburg", county: "meade", zipCode: "40108", visited: false, favorite: false,},		
             //{id: 288,	parkName: "Wolf Creek Park",	address: "", zipCode: "", visited: false, favorite: false,},		
             {id: 289,	parkName: "YMCA Camp Piomingo",	address: "1950 Otter Creek Park Rd", city: "brandenburg", county: "meade", zipCode: "40108", visited: false, favorite: false,}, 				
-            {id: 290,	parkName: "Bernheim Arboretum and Research Forest",	address: "2075 Clermont Rd", zipCode: "40110", visited: false, favorite: false,},	       
+            {id: 290,	parkName: "Bernheim Arboretum and Research Forest",	address: "2075 Clermont Rd", zipCode: "40110", visited: false, favorite: false,},
+            {id: 291, parkName: "Waterford Community Park", address: "", city: "taylorsville", county: "spencer", zipCode: "", visited: false, favorite: false,},
+            {id: 291, parkName: "Ray Jewell Park", address: "", city: "taylorsville", county: "spencer", zipCode: "", visited: false, favorite: false,},
+            {id: 291, parkName: "Taylorsville Lake State Park", address: "", city: "taylorsville", county: "spencer", zipCode: "", visited: false, favorite: false,},
+            {id: 291, parkName: "Spencer County Fairgrounds", address: "895 Fairgrounds Rd", city: "taylorsville", county: "spencer", zipCode: "40071", visited: false, favorite: false,},	       
 ]
