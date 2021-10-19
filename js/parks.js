@@ -1,5 +1,5 @@
 const parks = [
-    {id: 1,	parkName: '35TH STREET', 	address: "814 SOUTH 35TH ST",	city: "louisville".toLowerCase(), county: "jefferson".toLowerCase(), zipCode: "40211", visited: false, favorite: false,},
+    {id: 1,	parkName: '35TH STREET', 	address: "814 SOUTH 35TH ST",	city: "louisville", county: "jefferson", zipCode: "40211", visited: false, favorite: false,},
             {id: 2,	parkName: "CRESCENT HILL",	address: "3110 BROWNSBORO RD",	city: "louisville", county: "jefferson", zipCode: "40206", visited: false, favorite: false,},
             {id: 3, parkName: "ALGONQUIN",	address: "1614 CYPRESS ST",	city: "louisville", county: "jefferson", zipCode: "40210", visited: false, favorite: false,},
             {id: 4, parkName: "BELLEVUE",	address: "4711 BELLEVUE AVE",	city: "louisville", county: "jefferson", zipCode: "40215", visited: false, favorite: false,},
@@ -17,7 +17,7 @@ const parks = [
             {id: 16, parkName: "CARRIE GAULBERT COX",	address: "3730 RIVER RD",	city: "louisville", county: "jefferson", zipCode: "40207", visited: false, favorite: false,},
             {id: 17, parkName: "DOUGLASS",	address: "2305 DOUGLASS BLVD",	city: "louisville", county: "jefferson", zipCode: "40205", visited: false, favorite: false,},
             {id: 18, parkName: "EASTOVER",	address: "118 SACRED HEART LN",	city: "louisville", county: "jefferson", zipCode: "40206", visited: false, favorite: false,},
-            {id: 19, parkName: "FAIRDALE MINI", address: "10714 WEST MANSLICK RD",	zipCode: "40118", visited: false, favorite: false,},
+            {id: 19, parkName: "FAIRDALE MINI", address: "10714 WEST MANSLICK RD",	city: 'fairdale', county: 'jefferson', zipCode: "40118", visited: false, favorite: false,},
             {id: 20, parkName: "FLAGET FIELD",	address: "4425 GREENWOOD AVE",	city: "louisville", county: "jefferson", zipCode: "40211", visited: false, favorite: false,},
             {id: 21, parkName: "GERMAN-PARISTOWN",	address: "1134 EAST KENTUCKY ST",	city: "louisville", county: "jefferson", zipCode: "40204", visited: false, favorite: false,},
             {id: 22, parkName: "GNADINGER", address: "103 ELLISON AVE",	city: "louisville", county: "jefferson", zipCode: "40204", visited: false, favorite: false,},
@@ -27,7 +27,7 @@ const parks = [
             {id: 26, parkName: "HOUNZ LANE",	address: "2300 HOUNZ LN",	city: "louisville", county: "jefferson", zipCode: "40223", visited: false, favorite: false,},
             {id: 27, parkName: "IRISH HILL",	address: "1131 LEXINGTON RD",	city: "louisville", county: "jefferson", zipCode: "40204", visited: false, favorite: false,},
             {id: 28, parkName: "LOUIS B. ISRAEL", address: "4708 SOUTH FIRST ST",	city: "louisville", county: "jefferson", zipCode: "40214", visited: false, favorite: false,},
-            {id: 29, parkName: "HAYS KENNEDY",	address: "7303 BEACHLAND BEACH RD",	city: "Prospect", county: "jefferson", zipCode: "40059", visited: false, favorite: false,},
+            {id: 29, parkName: "HAYS KENNEDY",	address: "7303 BEACHLAND BEACH RD",	city: "prospect", county: "jefferson", zipCode: "40059", visited: false, favorite: false,},
             {id: 30, parkName: "KENNEDY COURT",	address: "225 KENNEDY AVE",	city: "louisville", county: "jefferson", zipCode: "40206", visited: false, favorite: false,},
             {id: 31, parkName: "KLONDIKE",	address: "3809 KLONDIKE LN",	city: "louisville", county: "jefferson", zipCode: "40218", visited: false, favorite: false,},
             {id: 32, parkName: "LAKE DREAMLAND", address: "4400 LAKE DREAMLAND RD",	city: "louisville", county: "jefferson", zipCode: "40216", visited: false, favorite: false,},
@@ -71,7 +71,7 @@ const parks = [
             {id: 72, parkName: "WILLOW",	address:  "1402 WILLOW AVE",	city: "louisville", county: "jefferson", zipCode: "40204", visited: false, favorite: false,},
             {id: 73, parkName: "GEORGE ROGERS clark",	address: "1024 THRUSTON AVE",	city: "louisville", county: "jefferson", zipCode: "40217", visited: false, favorite: false,},
             {id: 74, parkName: "CHEROKEE",	address: "745 COCHRAN HILL RD",	city: "louisville", county: "jefferson", zipCode: "40206", visited: false, favorite: false,},
-            {id: 75, parkName: "jefferson MEMORIAL FOREST",	address: "11311 MITCHELL HILL",	city: "Fairdale", county: "jefferson", zipCode: "40118", visited: false, favorite: false,},
+            {id: 75, parkName: "jefferson MEMORIAL FOREST",	address: "11311 MITCHELL HILL",	city: "fairdale", county: "jefferson", zipCode: "40118", visited: false, favorite: false,},
             {id: 76, parkName: "E. LELAND TAYLOR",	address: "317 NORTH 38TH ST",	city: "louisville", county: "jefferson", zipCode: "40212", visited: false, favorite: false,},
             {id: 77, parkName: "SHAWNEE GOLF COURSE",	address: "460 NORTHWESTERN PKWY",	city: "louisville", county: "jefferson", zipCode: "40212", visited: false, favorite: false,},
             {id: 78, parkName: "WILLIAM BRITT",	address: "2801 MAGAZINE ST",	city: "louisville", county: "jefferson", zipCode: "40211", visited: false, favorite: false,},
@@ -253,9 +253,9 @@ const parks = [
             {id: 254,	parkName: "Sam Peden Community Park",	address: "3037 Grant Line Rd",	city: "new albany", county: "floyd", zipCode: "47150", visited: false, favorite: false,},
             {id: 255,	parkName: "Southern IN Sports Center",	address: "620 Park East Blvd",	city: "new albany", county: "floyd", zipCode: "47150", visited: false, favorite: false,},
             {id: 256,	parkName: "Falls of the Ohio State Park",	address: "201 W. Riverside Dr",	city: "clarksville", county: "clark", zipCode: "47129", visited: false, favorite: false,},
-            {id: 257,	parkName: "Deam Lake State Recreation Area",	address: "1217 Deam Lake Rd off Hwy 60", city: "Borden", county: "clark",	zipCode: "47106", visited: false, favorite: false,},
-            {id: 258,	parkName: "Charlestown State Park",	address: "12500 Indiana 62", city: "Charlestown", county: "clark",	zipCode: "47111", visited: false, favorite: false,},
-            {id: 259,	parkName: "clark State Forest",	address: "PO BOX 119", city: "Henryville", county: "clark",	zipCode: "47126", visited: false, favorite: false,},
+            {id: 257,	parkName: "Deam Lake State Recreation Area",	address: "1217 Deam Lake Rd off Hwy 60", city: "borden", county: "clark",	zipCode: "47106", visited: false, favorite: false,},
+            {id: 258,	parkName: "Charlestown State Park",	address: "12500 Indiana 62", city: "charlestown", county: "clark",	zipCode: "47111", visited: false, favorite: false,},
+            {id: 259,	parkName: "clark State Forest",	address: "PO BOX 119", city: "henryville", county: "clark",	zipCode: "47126", visited: false, favorite: false,},
             {id: 260,	parkName: "harrison-Crawford State Forest",	address: "7240 Old Forest Road SW", city: "corydon", county: "harrison",	zipCode: "47112", visited: false, favorite: false,},
             {id: 261,	parkName: "O'Bannon Woods State Park",	address: "7234 Old Forest Road SW", city: "corydon", county: "harrison",	zipCode: "47112", visited: false, favorite: false,},
             {id: 262,	parkName: "Hayswood Nature Reserve",	address: "755 Hwy 135 NW", city: "corydon", county: "harrison",	zipCode: "47112", visited: false, favorite: false,},
@@ -272,23 +272,56 @@ const parks = [
             {id: 273,	parkName: "Clear Creek Park",	address: "717 Burks Branch",	city: "shelbyville", county: "shelby", zipCode: "40065", visited: false, favorite: false,},
             {id: 274,	parkName: "Red Orchard Park",	address: "704 Kentucky St",	city: "shelbyville", county: "shelby", zipCode: "40065", visited: false, favorite: false,},
             {id: 275,	parkName: "shelby Trails Park",	address: "5063 Aiken Road",	city: "simpsonville", county: "shelby", zipCode: "40067", visited: false, favorite: false,},
-            {id: 276,	parkName: "Finchville Park",	address: "5311 Taylorsville Rd",	city: "Finchville", county: "shelby", zipCode: "40022", visited: false, favorite: false,},
+            {id: 276,	parkName: "Finchville Park",	address: "5311 Taylorsville Rd",	city: "finchville", county: "shelby", zipCode: "40022", visited: false, favorite: false,},
             {id: 277,	parkName: "shelbyville Skate Park",	address: "1145 Washington St",	city: "shelbyville", county: "shelby", zipCode: "40065", visited: false, favorite: false,},
             {id: 278,	parkName: "shelbyville Greeenway Trail",	address: "97 7th St",	city: "shelbyville", county: "shelby", zipCode: "40065", visited: false, favorite: false,},
             {id: 279,	parkName: "Lake shelby Park and Campground",	address: "1433 Burks Branch Rd",	city: "shelbyville", county: "shelby", zipCode: "40065", visited: false, favorite: false,},
             {id: 280,	parkName: "Battletown Park",	address: "75 Lawson Creek Rd",	city: "battletown", county: 'meade',  zipCode: "40104", visited: false, favorite: false,},
             {id: 281,	parkName: "brandenburg Riverfront Park",	address: "Main Street",city: "brandenburg", county: "meade",	zipCode: "40108", visited: false, favorite: false,},
             {id: 282,	parkName: "Buttermilk Falls Trail",	address: "	",city: "brandenburg", county: "meade",	zipCode: "40108", visited: false, favorite: false,},
-            {id: 283,	parkName: "Concordia Park",	address: " ", city: 'Concordia', county: 'meade', zipCode: "40157", visited: false, favorite: false,},
+            {id: 283,	parkName: "Concordia Park",	address: " ", city: 'concordia', county: 'meade', zipCode: "40157", visited: false, favorite: false,},
             {id: 284,	parkName: "Dianna's Park",	address: "515 Broadway", city: "brandenburg", county: "meade",	zipCode: "40108", visited: false, favorite: false,},
             {id: 285,	parkName: "Flaherty Community Park",	address: "", zipCode: "40175", visited: false, favorite: false,},
             {id: 286,	parkName: "meade-Olin Park",	address: "163 Moremen Rd", county: 'meade',	zipCode: "40108", visited: false, favorite: false,},
             {id: 287,	parkName: "Otter Creek Recreation Area",	address: "850 Otter Creek Park Rd", city: "brandenburg", county: "meade", zipCode: "40108", visited: false, favorite: false,},		
             //{id: 288,	parkName: "Wolf Creek Park",	address: "", zipCode: "", visited: false, favorite: false,},		
             {id: 289,	parkName: "YMCA Camp Piomingo",	address: "1950 Otter Creek Park Rd", city: "brandenburg", county: "meade", zipCode: "40108", visited: false, favorite: false,}, 				
-            {id: 290,	parkName: "Bernheim Arboretum and Research Forest",	address: "2075 Clermont Rd", zipCode: "40110", visited: false, favorite: false,},
+            {id: 290,	parkName: "Bernheim Arboretum and Research Forest",	address: "2075 Clermont Rd", city: "clermont", county: "bullitt", zipCode: "40110", visited: false, favorite: false,},
             {id: 291, parkName: "Waterford Community Park", address: "", city: "taylorsville", county: "spencer", zipCode: " ", visited: false, favorite: false,},
             {id: 291, parkName: "Ray Jewell Park", address: "", city: "taylorsville", county: "spencer", zipCode: " ", visited: false, favorite: false,},
             {id: 291, parkName: "Taylorsville Lake State Park", address: "", city: "taylorsville", county: "spencer", zipCode: " ", visited: false, favorite: false,},
             {id: 291, parkName: "Spencer County Fairgrounds", address: "895 Fairgrounds Rd", city: "taylorsville", county: "spencer", zipCode: "40071", visited: false, favorite: false,},	       
 ]
+const parkNames = [];
+for (i in parks) {
+    let pName = parks[i].parkName
+    parkNames.push(pName)
+}
+const cities = [];
+for (i in parks) {
+    let cityName = parks[i].city
+    if (cities.includes(cityName) !== true ) {
+        cities.push(cityName)
+    } 
+}
+console.log(cities)
+
+const counties = [];
+for (i in parks) {
+    let countyName = parks[i].county
+    if (counties.includes(countyName) !== true) {
+        counties.push(countyName)
+    }
+}
+console.log(counties)
+
+const zipCodes = [];
+for (i in parks) {
+    let zipCodeNumber = parks[i].zipCode
+    if (zipCodes.includes(zipCodeNumber) !== true) {
+        zipCodes.push(zipCodeNumber)
+    }
+}
+const masterList = [];
+masterList.push(parkNames, cities, counties, zipCodes)
+console.log(masterList)
