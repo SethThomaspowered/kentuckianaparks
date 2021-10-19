@@ -281,8 +281,8 @@ const parks = [
             {id: 282,	parkName: "Buttermilk Falls Trail",	address: "	",city: "brandenburg", county: "meade",	zipCode: "40108", visited: false, favorite: false,},
             {id: 283,	parkName: "Concordia Park",	address: " ", city: 'concordia', county: 'meade', zipCode: "40157", visited: false, favorite: false,},
             {id: 284,	parkName: "Dianna's Park",	address: "515 Broadway", city: "brandenburg", county: "meade",	zipCode: "40108", visited: false, favorite: false,},
-            {id: 285,	parkName: "Flaherty Community Park",	address: "", zipCode: "40175", visited: false, favorite: false,},
-            {id: 286,	parkName: "meade-Olin Park",	address: "163 Moremen Rd", county: 'meade',	zipCode: "40108", visited: false, favorite: false,},
+            {id: 285,	parkName: "Flaherty Community Park",	address: "", city: 'flaherty', county: 'meade', zipCode: "40175", visited: false, favorite: false,},
+            {id: 286,	parkName: "meade-Olin Park",	address: "163 Moremen Rd", city: "brandenburg",county: 'meade',	zipCode: "40108", visited: false, favorite: false,},
             {id: 287,	parkName: "Otter Creek Recreation Area",	address: "850 Otter Creek Park Rd", city: "brandenburg", county: "meade", zipCode: "40108", visited: false, favorite: false,},		
             //{id: 288,	parkName: "Wolf Creek Park",	address: "", zipCode: "", visited: false, favorite: false,},		
             {id: 289,	parkName: "YMCA Camp Piomingo",	address: "1950 Otter Creek Park Rd", city: "brandenburg", county: "meade", zipCode: "40108", visited: false, favorite: false,}, 				
@@ -300,9 +300,9 @@ for (i in parks) {
 const cities = [];
 for (i in parks) {
     let cityName = parks[i].city
-    if (cities.includes(cityName) !== true ) {
-        cities.push(cityName)
-    } 
+    if (cities.includes(cityName) !== true) {
+    cities.push(cityName)
+ }
 }
 console.log(cities)
 
@@ -323,5 +323,28 @@ for (i in parks) {
     }
 }
 const masterList = [];
-masterList.push(parkNames, cities, counties, zipCodes)
+
+for (i in parks) {
+    let pName = parks[i].parkName
+    masterList.push(pName)
+}
+for (i in parks) {
+    let cityName = parks[i].city
+    if (masterList.includes(cityName) !== true ) {
+        masterList.push(cityName)
+    } 
+}
+
+for (i in parks) {
+    let countyName = parks[i].county
+    if (masterList.includes(countyName) !== true) {
+        masterList.push(countyName)
+    }
+}
+for (i in parks) {
+    let zipCodeNumber = parks[i].zipCode
+    if (masterList.includes(zipCodeNumber) !== true) {
+        masterList.push(zipCodeNumber)
+    }
+}
 console.log(masterList)

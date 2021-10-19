@@ -8,7 +8,7 @@
     <script src="./js/parks.js" defer></script>
 	<script src="./js/highlights.js" defer></script>
 	<script src="./js/parkfinder.js" defer></script>
-	
+	<script src="./js/test.js" defer></script>	
     <title>Kentuckiana Parks</title>
 </head>
 <body>
@@ -20,9 +20,9 @@
             <label> Search for parks by:<br> City, County, or Zip Code<br>
 			<input type="search" id='search-bar' autocomplete='off' v-model='searchParam'></input>
 			</label>
-			<!-- <ul class="output">
+			<ul class="output d-none">
 				<li v-for="item in masterList">{{ item }}</li>
-			</ul> -->
+			</ul>
         </div>
         <div class="park" id='city'>   
 			
@@ -100,5 +100,9 @@
 		<h2></h2>
 		<p>Thank you for visiting our page.</p>
 	</footer>
+	<script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
 </body>
 </html>
