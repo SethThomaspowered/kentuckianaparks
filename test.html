@@ -22,6 +22,47 @@
         </nav>
     </header>
     <main></main>
+    <div id="main">
+        <h2 id="title"></h2>
+      
+        <form>
+          <label for="name">Enter your name:</label>
+          <input id="name" type="text" required>
+          <input id="submitName" type="submit" value="Click here">
+          <button id="clear" type="submit">Clear</button>
+      </form>
+      </div>
     <footer></footer>
+    <script>
+      const input = document.querySelector('#name');
+const form = document.querySelector('form');
+const submit = document.querySelector('#submitName');
+const remove = document.querySelector('#clear');
+
+var storage = localStorage;
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+});
+
+submit.addEventListener('click', () => {
+    storage.setItem('name', input.value);
+    updateNameTitle();
+});
+
+remove.addEventListener('click', () => {
+    storage.removeItem('name');
+    updateNameTitle();
+});
+
+
+function updateNameTitle(){
+    const name = storage.getItem('name');
+
+const h1 = document.querySelector('#title');
+
+name ? h1.textContent = `Welcome ${name}` : h1.textContent = '';
+}
+    </script>
 </body>
 </html>

@@ -96,7 +96,7 @@
 			<table>
 			<thead><td>Park</td><td>Features</td</thead>
 
-			<tr v-for="highlight in highlights" :key='highlight.id' v-if='search.toLowerCase() == highlight.features'>
+			<tr v-for="highlight in searchedFeatures" :key='highlight.id' :highlight = 'highlight'>
 				<td>{{ highlight.parkName }}</td>
 				<td>{{ highlight.features }}</td>
           	</tr>
@@ -111,5 +111,6 @@
 			  src="https://code.jquery.com/jquery-3.6.0.min.js"
 			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
 			  crossorigin="anonymous"></script>
+	<script src=https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js></script>
 </body>
 </html>

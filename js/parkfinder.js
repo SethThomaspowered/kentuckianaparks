@@ -20,6 +20,13 @@ const app = new Vue ({
           return this.featuresList.filter(feature => {
             return feature.toLowerCase().includes(this.search.toLowerCase())
           })
-        }
+        },
+        searchedFeatures() {
+          const searchFilter = highlight => {
+            return highlight.features.toLowerCase().match(this.search.toLowerCase());
+          };
+          console.log(typeof(searchedFeatures));
+          return _.filter(this.highlights, searchFilter);
     } 
+  },
 })
