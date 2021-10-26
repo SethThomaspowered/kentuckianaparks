@@ -10,7 +10,7 @@ const app = new Vue ({
             randomId: Math.floor((Math.random() * 290) + 1),
             parks: parks,
             searchParam: '',
-            search: 'walking',
+            search: '',
             featuresList: ['disc golf', 'golf', 'walking', 'basketball'],
             masterList: masterList,
         }
@@ -23,10 +23,12 @@ const app = new Vue ({
         },
         searchedFeatures() {
           const searchFilter = highlight => {
-            return highlight.features.toLowerCase().match(this.search.toLowerCase());
+            return highlight.parkName.toLowerCase().match(this.search.toLowerCase());
           };
-          console.log(typeof(searchedFeatures));
-          return _.filter(this.highlights, searchFilter);
+          
+          results=_.filter(this.highlights, searchFilter);
+          resultsArray=Array(results)
+          return results;
     } 
   },
 })

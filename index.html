@@ -93,7 +93,7 @@
 		<label>Search by park feature: </label>
 		  <input type='search' autocomplete='off' prompt='Search by park feature' v-model='search'></input>
         
-			<table>
+			<table v-if="search !=''">
 			<thead><td>Park</td><td>Features</td</thead>
 
 			<tr v-for="highlight in searchedFeatures" :key='highlight.id' :highlight = 'highlight'>
