@@ -11,7 +11,7 @@ const app = new Vue ({
             parks: parks,
             searchParam: '',
             search: '',
-            featuresList: ['disc golf', 'golf', 'walking', 'basketball'],
+            featuresList: featuresList,
             masterList: masterList,
         }
 	},
