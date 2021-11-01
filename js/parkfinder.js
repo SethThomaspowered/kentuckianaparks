@@ -3,17 +3,17 @@ const app = new Vue ({
 	data() {
 		return {
 			selectedPark: "CHEROKEE",
-            selectedCity: "".toLowerCase(),
-            selectedCounty: "".toLowerCase(),
-            selectedZipCode: "",
-            highlights: highlights,
-            randomId: Math.floor((Math.random() * 290) + 1),
-            parks: parks,
-            searchParam: '',
-            search: '',
-            featuresList: featuresList,
-            masterList: masterList,
-        }
+      selectedCity: "".toLowerCase(),
+      selectedCounty: "".toLowerCase(),
+      selectedZipCode: "",
+      highlights: highlights,
+      randomId: Math.floor((Math.random() * 290) + 1),
+      parks: parks,
+      searchParam: '',
+      search: '',
+      featuresList: featuresList,
+      masterList: masterList,
+      }
 	},
     computed: {
         filteredList() {

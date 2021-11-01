@@ -1136,18 +1136,18 @@ const highlights = [
         
 ]
 
-const featureslist = [];
+const featuresList = [];
 
 for (i in parks) {
     let pName = highlights[i].parkName
-    if (featureslist.includes(pName) !== true) {
-        featureslist.push(pName)        
+    if (featuresList.includes(pName) !== true) {
+        featuresList.push(pName)        
     }
     
 }
 for (i in parks) {
     let feature = parks[i].features
-    if (featureslist.includes(feature) !== true ) {
-        featureslist.push(feature)
+    if (featuresList.includes(feature) !== true ) {
+        featuresList.push(feature)
     } 
 }
