@@ -29,6 +29,15 @@ const app = new Vue ({
           results=_.filter(this.highlights, searchFilter);
           resultsArray=Array(results)
           return results;
-    } 
+        },
+        searchedParks() {
+          const searchFilter = park => {
+            return park.parkName.toLowerCase().match(this.searchParam.toLowerCase());
+          };
+          
+          results=_.filter(this.parks, searchFilter);
+          resultsArray=Array(results)
+          return results;
+        } 
   },
 })
