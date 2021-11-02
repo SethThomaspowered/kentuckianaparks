@@ -288,9 +288,9 @@ const parks = [
             {id: 289,	parkName: "ymca camp piomingo",	address: "1950 Otter Creek park Rd", city: "brandenburg", county: "meade", zipCode: "40108", visited: false, favorite: false,}, 				
             {id: 290,	parkName: "bernheim arboretum and research forest",	address: "2075 Clermont Rd", city: "clermont", county: "bullitt", zipCode: "40110", visited: false, favorite: false,},
             {id: 291, parkName: "waterford community park", address: "", city: "taylorsville", county: "spencer", zipCode: " ", visited: false, favorite: false,},
-            {id: 291, parkName: "ray jewell park", address: "", city: "taylorsville", county: "spencer", zipCode: " ", visited: false, favorite: false,},
-            {id: 291, parkName: "taylorsville lake state park", address: "", city: "taylorsville", county: "spencer", zipCode: " ", visited: false, favorite: false,},
-            {id: 291, parkName: "spencer county fairgrounds", address: "895 Fairgrounds Rd", city: "taylorsville", county: "spencer", zipCode: "40071", visited: false, favorite: false,},	       
+            {id: 292, parkName: "ray jewell park", address: "", city: "taylorsville", county: "spencer", zipCode: " ", visited: false, favorite: false,},
+            {id: 293, parkName: "taylorsville lake state park", address: "", city: "taylorsville", county: "spencer", zipCode: " ", visited: false, favorite: false,},
+            {id: 294, parkName: "spencer county fairgrounds", address: "895 Fairgrounds Rd", city: "taylorsville", county: "spencer", zipCode: "40071", visited: false, favorite: false,},	       
 ]
 const parkNames = [];
 for (i in parks) {
