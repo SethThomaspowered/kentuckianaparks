@@ -19,45 +19,23 @@
 		<div class="SearchRadioButtons row">
             <label> Search for parks by:<br> City, County, or Zip Code<br>
 			<input type="search" id='search-bar' autocomplete='off' v-model='searchParam'></input>
-			</label>
+			<!-- </label>
 			<ul class="output d-none">
 				<li v-for="item in masterList">{{ item }}</li>
-			</ul>
+			</ul> -->
         </div>
         <div class="park" id='city'>   
 			
-			<table>
+			<table v-if="searchParam != ''">
 			<thead><td>Park</td><td>Street Address</td><td>City</td><td>Visited</td><td>Favorite</td></thead>
-			<tr v-for="park in parks" :key='park.id' v-if='searchParam.toLowerCase() === park.parkName'>
+			<tr v-for="park in searchedParks" :key='park.id' :park='park'>
 				<td>{{ park.parkName }}</td>
 				<td>{{ park.address }}</td>
 				<td>{{ park.city }}, {{ park.county }}, {{ park.zipCode }}</td>
 				<td><input type="checkbox" v-model='park.visited'></input></td>
                 <td><input type="checkbox" v-model='park.favorite'></input></td>
 			</tr>
-			<tr v-for="park in parks" :key='park.id' v-if='searchParam.toLowerCase() === park.city'>
-				<td>{{ park.parkName }}</td>
-				<td>{{ park.address }}</td>
-				<td>{{ park.city }}, {{ park.county }}, {{ park.zipCode }}</td>
-				<td><input type="checkbox" v-model='park.visited'></input></td>
-                <td><input type="checkbox" v-model='park.favorite'></input></td>
-			</tr>
-			<tr v-for="park in parks" :key='park.id' v-if='park.county === searchParam.toLowerCase()'>
-				<td>{{ park.parkName }}</td>
-				<td>{{ park.address }}</td>
-				<td>{{ park.city }}, {{ park.county }}, {{ park.zipCode }}</td>
-				<td><input type="checkbox" v-model='park.visited'></input></td>
-                <td><input type="checkbox" v-model='park.favorite'></input></td>
-          	</tr>
-			<tr v-for="park in parks" :key='park.id' v-if='park.zipCode === searchParam'>
-				<td>{{ park.parkName }}</td>
-				<td>{{ park.address }}</td>
-				<td>{{ park.city }}, {{ park.county }}, {{ park.zipCode }}</td>
-				<td><input type="checkbox" v-model='park.visited'></input></td>
-                <td><input type="checkbox" v-model='park.favorite'></input></td>
-          </tr>
-		  </table>
-		  
+			</table>
 		</div>
 		<section>  
 		 	<div class='row'>
@@ -77,15 +55,14 @@
 		  	<div class="col">
 				<p>My Favorite Parks</p>
 				<table>
-				<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>Favorite</td></thead>
-				<div>
-			<tr v-for="park in parks" :key='park.id' v-if='park.favorite === true'>
-				<td>{{ park.parkName }}</td>
-				<td>{{ park.address }}</td>
-				<td>{{ park.zipCode }}</td>
-				<td><input type="checkbox" v-model='park.favorite'></input></td>
-          </tr>
-		  </table>
+					<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>Favorite</td></thead>
+					<tr v-for="park in parks" :key='park.id' v-if='park.favorite === true'>
+					<td>{{ park.parkName }}</td>
+					<td>{{ park.address }}</td>
+					<td>{{ park.zipCode }}</td>
+					<td><input type="checkbox" v-model='park.favorite'></input></td>
+          			</tr>
+		  		</table>
 		  </div>
 		</div>
 		</section>
@@ -96,7 +73,7 @@
 			<table v-if="search !=''">
 			<thead><td>Park</td><td>Features</td</thead>
 
-			<tr v-for="highlight in searchedFeatures" :key='highlight.id' :highlight = 'highlight'>
+			<tr v-for="highlight in searchedFeatures" :key='highlight.id' :highlight ='highlight'>
 				<td>{{ highlight.parkName }}</td>
 				<td>{{ highlight.features }}</td>
           	</tr>

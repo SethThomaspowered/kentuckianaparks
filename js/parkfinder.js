@@ -3,8 +3,8 @@ const app = new Vue ({
 	data() {
 		return {
 			selectedPark: "CHEROKEE",
-      selectedCity: "".toLowerCase(),
-      selectedCounty: "".toLowerCase(),
+      selectedCity: "",
+      selectedCounty: "",
       selectedZipCode: "",
       highlights: highlights,
       randomId: Math.floor((Math.random() * 290) + 1),
@@ -23,21 +23,24 @@ const app = new Vue ({
         },
         searchedFeatures() {
           const searchFilter = highlight => {
-            return highlight.parkName.toLowerCase().match(this.search.toLowerCase());
+            return highlight.parkName.toLowerCase().match(this.search.toLowerCase()) 
+            || highlight.features.toLowerCase().match(this.search.toLowerCase());
           };
           
-          results=_.filter(this.highlights, searchFilter);
-          resultsArray=Array(results)
-          return results;
+          results1=_.filter(this.highlights, searchFilter);
+          results1Array=Array(results1)
+          return results1;
         },
         searchedParks() {
           const searchFilter = park => {
-            return park.parkName.toLowerCase().match(this.searchParam.toLowerCase());
+            return park.city.toLowerCase().match(this.searchParam.toLowerCase())
+            || park.county.toLowerCase().match(this.searchParam.toLowerCase())
+            || park.zipCode.match(this.searchParam.toLowerCase());
           };
           
           results=_.filter(this.parks, searchFilter);
           resultsArray=Array(results)
           return results;
-        } 
+        }, 
   },
 })
