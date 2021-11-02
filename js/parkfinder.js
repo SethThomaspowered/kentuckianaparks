@@ -27,9 +27,9 @@ const app = new Vue ({
             || highlight.features.toLowerCase().match(this.search.toLowerCase());
           };
           
-          results1=_.filter(this.highlights, searchFilter);
-          results1Array=Array(results1)
-          return results1;
+          results=_.filter(this.highlights, searchFilter);
+          resultsArray=Array(results)
+          return results;
         },
         searchedParks() {
           const searchFilter = park => {
