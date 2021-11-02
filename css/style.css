@@ -7,11 +7,13 @@ body {
     background-color: rgba(24, 128, 24, 0.5);
 
 }
-h1, footer {
+header, footer {
     background-color: rgb(165, 42, 42);
     text-align: center;
 }
-
+header {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 td {
 	border: 1px solid black;
     display:flexbox;
@@ -39,45 +41,7 @@ tr:nth-child(even) {
     text-decoration: none;
     
 }
-/* .output {
-    list-style: none;
-    width: 100%;
-    min-height: 0px;
-    border-top: 0 !important;
-    color: #767676;
-    font-size: .75em;
-    transition: min-height 0.2s;
-    position: absolute;
-    z-index: 5;
-  }
-  
-  .output, #search-bar {
-    background: #fff;
-    border: 1px solid #767676;
-  }
-  
-  .prediction-item {
-    padding: .5em .75em;
-    transition: color 0.2s, background 0.2s;
-  }
-  
-  .output:hover .focus {
-    background: #fff;
-    color: #767676;
-  }
-  
-  .prediction-item:hover, .focus,
-  .output:hover .focus:hover {
-    background: #ddd;
-    color: #333;
-  }
-  
-  .prediction-item:hover {
-    cursor: pointer;
-  }
-  
-  .prediction-item strong { color: #333; }
-  .prediction-item:hover strong { color: #000; } */
+
 @media screen and (min-width: 600px){
     td {
         font-size: small;
