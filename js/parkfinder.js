@@ -10,6 +10,7 @@ const app = new Vue ({
       search: '',
       featuresList: featuresList,
       masterList: masterList,
+      retrievedParks: JSON.parse(retrievedParks),
       }
 	},
     computed: {

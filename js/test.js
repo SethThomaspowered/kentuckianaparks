@@ -175,3 +175,7 @@ var storage = localStorage;
 let welcomeName = document.getElementById("welcome")
 let dName= storage.getItem('name')
 welcomeName.innerText = dName
+storage.setItem("parks1", JSON.stringify(parks[1]));
+let retrievedParks = storage.getItem('parks1');
+console.log('retrieved Parks: ', JSON.parse(retrievedParks));
+console.log(JSON.parse(retrievedParks).address)

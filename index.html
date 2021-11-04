@@ -7,8 +7,9 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
     <script src="./js/parks.js" defer></script>
 	<script src="./js/highlights.js" defer></script>
+	<script src="./js/test.js" defer></script>
 	<script src="./js/parkfinder.js" defer></script>
-	<script src="./js/test.js" defer></script>	
+		
     <title>Kentuckiana Parks</title>
 </head>
 <body>
@@ -34,8 +35,8 @@
 				<td>{{ park.parkName }}</td>
 				<td>{{ park.address }}</td>
 				<td>{{ park.city }}, {{ park.county }}, {{ park.zipCode }}</td>
-				<td><input type="checkbox" v-model='park.visited'></input></td>
-                <td><input type="checkbox" v-model='park.favorite'></input></td>
+				<td><input class='visited' type="checkbox" v-model='park.visited'></input></td>
+                <td><input class='favorite' type="checkbox" v-model='park.favorite'></input></td>
 			</tr>
 			</table>
 		</div>
@@ -43,7 +44,7 @@
 		 	<div class='row'>
 			<div class="col">
 				<p>Parks I want to visit.</p>
-		  	
+				<p>Park address is {{ retrievedParks.address }}</p>
 				<table>
 					<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>To Visit</td></thead>
 					<tr v-for="park in parks" :key='park.id' v-if='park.visited === true'>
