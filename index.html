@@ -44,7 +44,7 @@
 		 	<div class='row'>
 			<div class="col">
 				<p>Parks I want to visit.</p>
-				<p>Park address is {{ retrievedParks.address }}</p>
+				<button onclick="saveResults">Save Results</button>
 				<table>
 					<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>To Visit</td></thead>
 					<tr v-for="park in parks" :key='park.id' v-if='park.visited === true'>

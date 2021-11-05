@@ -175,7 +175,13 @@ var storage = localStorage;
 let welcomeName = document.getElementById("welcome")
 let dName= storage.getItem('name')
 welcomeName.innerText = dName
-storage.setItem("parks1", JSON.stringify(parks[1]));
-let retrievedParks = storage.getItem('parks1');
-console.log('retrieved Parks: ', JSON.parse(retrievedParks));
-console.log(JSON.parse(retrievedParks).address)
+const saveResults = () => { 
+//   for (let i = 0; i < parks.length; i++) {
+//     if (parks[i].visited || parks[i].favorite) {
+//       storage.setItem("parks" + parks[i].id, JSON.stringify(parks[i]));
+//   }
+// }
+  console.log("This works");
+}
+
+// let retrievedPark1 = storage.getItem('parks1');

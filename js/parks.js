@@ -1,5 +1,5 @@
 const parks = [
-    {id: 1,	parkName: '35th street', 	address: "814 SOUTH 35TH ST",	city: "louisville", county: "jefferson", zipCode: "40211", visited: false, favorite: false,},
+            {id: "1",	parkName: '35th street', 	address: "814 SOUTH 35TH ST",	city: "louisville", county: "jefferson", zipCode: "40211", visited: true, favorite: false,},
             {id: 2,	parkName: "crescent hill",	address: "3110 BROWNSBORO RD",	city: "louisville", county: "jefferson", zipCode: "40206", visited: false, favorite: false,},
             {id: 3, parkName: "algonquin",	address: "1614 CYPRESS ST",	city: "louisville", county: "jefferson", zipCode: "40210", visited: false, favorite: false,},
             {id: 4, parkName: "bellevue",	address: "4711 BELLEVUE AVE",	city: "louisville", county: "jefferson", zipCode: "40215", visited: false, favorite: false,},
@@ -14,7 +14,7 @@ const parks = [
             {id: 13, parkName: "chickasaw",	address: "1200 SOUTHWESTERN PKWY",	city: "louisville", county: "jefferson", zipCode: "40211", visited: false, favorite: false,},
             {id: 14, parkName: "cliff",	address: "4666 CLIFF AVE",	city: "louisville", county: "jefferson", zipCode: "40215", visited: false, favorite: false,},
             {id: 15, parkName: "clifton", address: "133 NORTH CHARLTON ST",	city: "louisville", county: "jefferson", zipCode: "40206", visited: false, favorite: false,},
-            {id: 16, parkName: "carrie gaulbert cox",	address: "3730 RIVER RD",	city: "louisville", county: "jefferson", zipCode: "40207", visited: false, favorite: false,},
+            {id: 16, parkName: "carrie gaulbert cox",	address: "3730 RIVER RD",	city: "louisville", county: "jefferson", zipCode: "40207", visited: false, favorite: true,},
             {id: 17, parkName: "douglass",	address: "2305 DOUGLASS BLVD",	city: "louisville", county: "jefferson", zipCode: "40205", visited: false, favorite: false,},
             {id: 18, parkName: "eastover",	address: "118 SACRED HEART LN",	city: "louisville", county: "jefferson", zipCode: "40206", visited: false, favorite: false,},
             {id: 19, parkName: "fairdale mini", address: "10714 WEST MANSLICK RD",	city: 'fairdale', county: 'jefferson', zipCode: "40118", visited: false, favorite: false,},
