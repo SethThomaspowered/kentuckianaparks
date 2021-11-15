@@ -38,6 +38,15 @@ const app = new Vue ({
           results=_.filter(this.parks, searchFilter);
           resultsArray=Array(results)
           return results;
-        }, 
+        },
+        // saveResults() { 
+        //     for (let i = 0; i < parks.length; i++) {
+        //       if (parks[i].visited || parks[i].favorite) {
+        //         storage.setItem("parks" + parks[i].id, JSON.stringify(parks[i]));
+        //     }
+        //   }
+        //     console.log("This works");
+        //   },
+         
   },
 })
