@@ -5,6 +5,7 @@
 }
 body {
     background-color: rgba(24, 128, 24, 0.5);
+    text-align: center;
 
 }
 header, footer {
@@ -31,6 +32,7 @@ tr:nth-child(even) {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
+    align-items: center;
 }
 .d-none {
     display: none;
@@ -41,17 +43,26 @@ tr:nth-child(even) {
     text-decoration: none;
     
 }
-
+.hero {
+    order:-1;
+    width: 50%;
+    height: auto;
+}
 @media screen and (min-width: 600px){
     td {
         font-size: small;
     }    
     .row {
         flex-direction: row;
+        justify-content: space-around;
+        
     }
 }
 @media screen  and (min-width: 992px){
     td {
         font-size: medium;
+    }
+    .hero{
+        order: 1;
     }
 }
