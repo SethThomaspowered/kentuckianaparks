@@ -19,13 +19,15 @@
     <div id='app'>
 		<h2>Kentuckiana Parks</h2>
 		<div class="SearchRadioButtons row">
-            <label> Search for parks by:<br> City, County, or Zip Code<br>
+            <label class="col-1 sidebar"> Search for parks by:<br> City, County, or Zip Code<br>
 			<input type="search" id='search-bar' autocomplete='off' v-model='searchParam'></input>
-			<!-- </label>
-			<ul class="output d-none">
+			</label>
+			<!-- <ul class="output d-none">
 				<li v-for="item in masterList">{{ item }}</li>
 			</ul> -->
+			<img src='mapofzipcodes.png' alt='Parks per Zip Code' class="col-2 hero">
         </div>
+		
         <div class="park" id='city'>   
 			
 			<table v-if="searchParam != ''">
@@ -43,7 +45,6 @@
 		 	<div class='row'>
 			<div class="col">
 				<p>Parks I want to visit.</p>
-				<button onclick="saveResults()">Save Results</button>
 				<table>
 					<thead><td>Park</td><td>Street Address</td><td>Zip Code</td><td>To Visit</td></thead>
 					<tr v-for="park in parks" :key='park.id' v-if='park.visited === true'>
@@ -67,6 +68,7 @@
 		  		</table>
 		  </div>
 		</div>
+		<button onclick="saveResults()">Save Results</button>
 		</section>
 		<div class="park">  
 		<label>Search by park feature: </label>
