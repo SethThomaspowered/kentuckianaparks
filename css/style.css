@@ -6,12 +6,14 @@
 body {
     background-color: rgba(24, 128, 24, 0.5);
     text-align: center;
+    min-height: 100vh;
 
 }
 header, footer {
     background-color: rgb(165, 42, 42);
     text-align: center;
 }
+
 header {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
