@@ -39,14 +39,14 @@ const app = new Vue ({
           resultsArray=Array(results)
           return results;
         },
-        // saveResults() { 
-        //     for (let i = 0; i < parks.length; i++) {
-        //       if (parks[i].visited || parks[i].favorite) {
-        //         storage.setItem("parks" + parks[i].id, JSON.stringify(parks[i]));
-        //     }
-        //   }
-        //     console.log("This works");
-        //   },
-         
+        saveResults() { 
+            const myparks= parks.map(function(park){
+                storage.setItem("parks" + parks[i].id, JSON.stringify(parks[i]));
+            })
+        },
   },
 })
+// const saveResults = (parks) => ( 
+//   parks.map(function(park){
+//     storage.setItem("parks" + park[i].id, JSON.stringify(park[i]));
+// }))
