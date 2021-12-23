@@ -1,11 +1,13 @@
 package com.example.kentuckianaparks.service;
 
+import com.example.kentuckianaparks.exception.InformationNotFoundException;
 import com.example.kentuckianaparks.model.Park;
 import com.example.kentuckianaparks.repository.ParkRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.logging.Logger;
 
 @Service
@@ -18,7 +20,16 @@ public class ParkService {
         this.parkRepository = parkRepository;
     }
     public List<Park> getParks(){
-        LOGGER.info("calling getCategories method from service");
+        LOGGER.info("calling getParks method from service");
         return parkRepository.findAll();
+    }
+    public Optional<Park> getPark(Long parkId){
+        LOGGER.info("calling getPark method from service");
+        Optional<Park> park = parkRepository.findById(parkId);
+        if (park.isPresent()) {
+            return park;
+        } else {
+            throw new InformationNotFoundException("Park with id " + parkId + " not found");
+        }
     }
 }
