@@ -8,62 +8,62 @@
     <title>Test Page || Kentuckiana Parks</title>
 </head>
 <body>
-    <header>
-        <h1>Kentuckiana Parks</h1>
-        <nav class='top-nav row'>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="parkresources.html">Park </a>
-                </li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main></main>
-    <div id="main">
-        <h2 id="title"></h2>
-      
-        <form>
-          <label for="name">Enter your name:</label>
-          <input id="name" type="text" required>
-          <button id="submitName" type="submit"><a href='index.html'>Sign In</a></button> 
-          <button id="clear" type="submit">Clear</button>
-      </form>
-      </div>
-    <footer></footer>
-    <script>
-      const input = document.querySelector('#name');
-const form = document.querySelector('form');
-const submit = document.querySelector('#submitName');
-const remove = document.querySelector('#clear');
+<header>
+    <h1>Kentuckiana Parks</h1>
+    <nav class='top-nav row'>
+        <ul>
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="parkresources.html">Park </a>
+            </li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+<main></main>
+<div id="main">
+    <h2 id="title"></h2>
 
-var storage = localStorage;
+    <form>
+        <label for="name">Enter your name:</label>
+        <input id="name" type="text" required>
+        <button id="submitName" type="submit"><a href='index.html'>Sign In</a></button>
+        <button id="clear" type="submit">Clear</button>
+    </form>
+</div>
+<footer></footer>
+<script>
+    const input = document.querySelector('#name');
+    const form = document.querySelector('form');
+    const submit = document.querySelector('#submitName');
+    const remove = document.querySelector('#clear');
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-});
+    var storage = localStorage;
 
-submit.addEventListener('click', () => {
-    storage.setItem('name', input.value);
-    updateNameTitle();
-});
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+    });
 
-remove.addEventListener('click', () => {
-    storage.removeItem('name');
-    updateNameTitle();
-});
+    submit.addEventListener('click', () => {
+        storage.setItem('name', input.value);
+        updateNameTitle();
+    });
+
+    remove.addEventListener('click', () => {
+        storage.removeItem('name');
+        updateNameTitle();
+    });
 
 
-function updateNameTitle(){
-    const name = storage.getItem('name');
+    function updateNameTitle() {
+        const name = storage.getItem('name');
 
-const h1 = document.querySelector('#title');
+        const h1 = document.querySelector('#title');
 
-name ? h1.textContent = `Welcome ${name}` : h1.textContent = '';
-}
-    </script>
+        name ? h1.textContent = `Welcome ${name}` : h1.textContent = '';
+    }
+</script>
 </body>
 </html>

@@ -3,32 +3,37 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 body {
     background-color: rgba(24, 128, 24, 0.5);
     text-align: center;
     min-height: 100vh;
 
 }
+
 header, footer {
     background-color: rgb(165, 42, 42);
     text-align: center;
 }
 
 header {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 td {
-	border: 1px solid black;
-    display:flexbox;
+    border: 1px solid black;
+    display: flexbox;
     width: 20%;
     text-align: center;
     text-transform: capitalize;
     margin-right: 0px;
     font-size: x-small;
 }
+
 tr:nth-child(even) {
     background-color: chartreuse;
 }
+
 .row {
     display: flex;
     flex-direction: column;
@@ -36,6 +41,7 @@ tr:nth-child(even) {
     text-align: center;
     align-items: center;
 }
+
 .d-none {
     display: none;
 }
@@ -43,28 +49,33 @@ tr:nth-child(even) {
 .top-nav ul li, #submitName a {
     display: inline;
     text-decoration: none;
-    
+
 }
+
 .hero {
-    order:-1;
+    order: -1;
     width: 50%;
     height: auto;
 }
-@media screen and (min-width: 600px){
+
+@media screen and (min-width: 600px) {
     td {
         font-size: small;
-    }    
+    }
+
     .row {
         flex-direction: row;
         justify-content: space-around;
-        
+
     }
 }
-@media screen  and (min-width: 992px){
+
+@media screen  and (min-width: 992px) {
     td {
         font-size: medium;
     }
-    .hero{
+
+    .hero {
         order: 1;
     }
 }
