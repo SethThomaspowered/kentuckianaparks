@@ -3,10 +3,7 @@ package com.example.kentuckianaparks.controller;
 import com.example.kentuckianaparks.model.Park;
 import com.example.kentuckianaparks.service.ParkService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 import java.util.Optional;
@@ -31,5 +28,10 @@ public class ParkController {
     public Optional<Park> getPark(@PathVariable(value = "parkId") Long parkId){
         LOGGER.info("using getPark method to find one park");
         return parkService.getPark(parkId);
+    }
+    @PostMapping("/parks")
+    public Park createPark(@RequestBody Park parkObject){
+        LOGGER.info("calling createPark method to add park");
+        return parkService.createPark(parkObject);
     }
 }

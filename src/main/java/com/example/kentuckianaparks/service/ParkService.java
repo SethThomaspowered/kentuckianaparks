@@ -1,10 +1,12 @@
 package com.example.kentuckianaparks.service;
 
+import com.example.kentuckianaparks.exception.InformationExistsException;
 import com.example.kentuckianaparks.exception.InformationNotFoundException;
 import com.example.kentuckianaparks.model.Park;
 import com.example.kentuckianaparks.repository.ParkRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 import java.util.Optional;
@@ -32,4 +34,14 @@ public class ParkService {
             throw new InformationNotFoundException("Park with id " + parkId + " not found");
         }
     }
+    public Park createPark(@RequestBody Park parkObject){
+        LOGGER.info("calling createPark method from service");
+        Park park = parkRepository.findByName(parkObject.getName());
+        if (park !=null){
+            throw new InformationExistsException("park with name " + park.getName() + "already exists");
+        }else{
+            return parkRepository.save(parkObject);
+        }
+    }
+
 }
