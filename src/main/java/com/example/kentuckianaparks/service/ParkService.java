@@ -43,5 +43,38 @@ public class ParkService {
             return parkRepository.save(parkObject);
         }
     }
-
+    public Park updatePark(Long parkId, @RequestBody Park parkObject) {
+        LOGGER.info("calling parkCategory method from service");
+        Optional<Park> park = parkRepository.findById(parkId);
+        // findById
+        if (park.isPresent()) {
+            // check the park name match with the park name in the DB
+            if (parkObject.getName().equals(park.get().getName())) {
+                LOGGER.warning("park name is equal to database object name");
+                throw new InformationExistsException("park " + park.get().getName() + " is already exists");
+            } else {
+                // find the park and update with new information
+                Park updatePark = parkRepository.findById(parkId).get();
+                updatePark.setName(parkObject.getName());
+                updatePark.setAddress(parkObject.getAddress());
+                updatePark.setCity(parkObject.getCity());
+                updatePark.setCounty(parkObject.getCounty());
+                updatePark.setState(parkObject.getState());
+                updatePark.setZipCode(parkObject.getZipCode());
+                return parkRepository.save(updatePark);
+            }
+        } else {
+            throw new InformationNotFoundException("Park with id " + parkId + " not found");
+        }
+    }
+    public Optional<Park> deletePark(Long parkId) {
+        LOGGER.info("calling deletePark method from service");
+        Optional<Park> park = parkRepository.findById(parkId);
+        if (park.isPresent()) {
+            parkRepository.deleteById(parkId);
+            return park;
+        } else {
+            throw new InformationNotFoundException("park with id " + parkId + " not found");
+        }
+    }
 }

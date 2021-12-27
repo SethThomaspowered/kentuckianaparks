@@ -19,7 +19,7 @@ public class ParkController {
     public void setParkService(ParkService parkService){
         this.parkService = parkService;
     }
-    @GetMapping("/Parks")
+    @GetMapping("/parks")
     public List<Park> getParks() {
         LOGGER.info("using getParks method to find all categories");
         return parkService.getParks();
@@ -33,5 +33,16 @@ public class ParkController {
     public Park createPark(@RequestBody Park parkObject){
         LOGGER.info("calling createPark method to add park");
         return parkService.createPark(parkObject);
+    }
+    @PutMapping(path = "/parks/{parkId}")
+    public Park updatePark(@PathVariable(value = "parkId") Long parkId,
+                                   @RequestBody Park parkObject) {
+        LOGGER.info("calling updatePark method from controller");
+        return parkService.updatePark(parkId, parkObject);
+    }
+    @DeleteMapping("/parks/{parkId}")
+    public Optional<Park> deletePark(@PathVariable(value = "parkId") Long parkId) {
+        LOGGER.info("calling deletePark method from controller");
+        return parkService.deletePark(parkId);
     }
 }
